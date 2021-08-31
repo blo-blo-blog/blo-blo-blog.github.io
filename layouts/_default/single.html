@@ -32,7 +32,6 @@
     <!-- likecoin here -->
     {{ partial "likecoin.html" . }}
   </div>
-  <!--
   <footer class="post-footer">
     {{- if .Params.tags }}
     <ul class="post-tags">
@@ -44,11 +43,12 @@
     {{- if (.Param "ShowPostNavLinks") }}
     {{- partial "post_nav_links.html" . }}
     {{- end }}
+  <!--
     {{- if (and .Site.Params.ShowShareButtons (ne .Params.disableShare true)) }}
     {{- partial "share_icons.html" . -}}
     {{- end }}
-  </footer>
   -->
+  </footer>
 
   {{- if (.Param "comments") }}
   {{- partial "comments.html" . }}
