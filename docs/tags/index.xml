@@ -6,7 +6,25 @@
     <description>Recent content in 標籤 on blo.blo.blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>utf-8</language>
-    <lastBuildDate>Wed, 04 Aug 2021 09:14:28 +0800</lastBuildDate><atom:link href="https://blo-blo-blog.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 31 Aug 2021 16:10:27 +0800</lastBuildDate><atom:link href="https://blo-blo-blog.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hugo</title>
+      <link>https://blo-blo-blog.github.io/tags/hugo/</link>
+      <pubDate>Tue, 31 Aug 2021 16:10:27 +0800</pubDate>
+      
+      <guid>https://blo-blo-blog.github.io/tags/hugo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>LikeCoin</title>
+      <link>https://blo-blo-blog.github.io/tags/likecoin/</link>
+      <pubDate>Tue, 31 Aug 2021 16:10:27 +0800</pubDate>
+      
+      <guid>https://blo-blo-blog.github.io/tags/likecoin/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>git</title>
       <link>https://blo-blo-blog.github.io/tags/git/</link>
@@ -31,15 +49,6 @@
       <pubDate>Wed, 04 Aug 2021 09:14:28 +0800</pubDate>
       
       <guid>https://blo-blo-blog.github.io/tags/github-page/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Hugo</title>
-      <link>https://blo-blo-blog.github.io/tags/hugo/</link>
-      <pubDate>Wed, 04 Aug 2021 09:14:28 +0800</pubDate>
-      
-      <guid>https://blo-blo-blog.github.io/tags/hugo/</guid>
       <description></description>
     </item>
     
