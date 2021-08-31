@@ -29,7 +29,10 @@
     {{- if not (.Param "disableAnchoredHeadings") }}
     {{- partial "anchored_headings.html" .Content -}}
     {{- else }}{{ .Content }}{{ end }}
+    <!-- likecoin here -->
+    {{ partial "likecoin.html" . }}
   </div>
+  <!--
   <footer class="post-footer">
     {{- if .Params.tags }}
     <ul class="post-tags">
@@ -45,6 +48,7 @@
     {{- partial "share_icons.html" . -}}
     {{- end }}
   </footer>
+  -->
 
   {{- if (.Param "comments") }}
   {{- partial "comments.html" . }}
