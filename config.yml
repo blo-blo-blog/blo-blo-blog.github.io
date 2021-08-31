@@ -1,5 +1,5 @@
-baseURL: "https://kkkeevvvin.github.io"
-title: "kkkeevvvin"
+baseURL: "https://blo.blo.blog.github.io"
+title: "blo.blo.blog"
 # paginate: 10 # 一頁放幾筆資料
 theme: PaperMod
 
@@ -74,7 +74,7 @@ languages:
 params:
     # env: production # to enable google analytics, opengraph, twitter-cards and schema.
     # description: "Theme PaperMod - https://github.com/adityatelange/hugo-PaperMod"
-    author: kkkeevvvin
+    author: blo.blo.blog
     # author: ["Me", "You"] # multiple authors
 
     defaultTheme: dark
@@ -109,14 +109,14 @@ params:
         #       url: series
 
     homeInfoParams:
-        Title: "kkkeevvvin"
+        Title: "blo.blo.blog"
         Content: >
             嗨！
     socialIcons:
         - name: github
-          url: "https://github.com/kkkeevvvin/kkkeevvvin.github.io"
+          url: "https://github.com/blo-blo-blog/blo.blo.blog.github.io"
         - name: instagram
-          url: "https://www.instagram.com/kkkeevvvin/"
+          url: "https://www.instagram.com/blo.blo.blog/"
         # - name: other
         #   url: "https://liker.land/kkkevin/"
 

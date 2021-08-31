@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Github on kkkeevvvin</title>
-    <link>https://kkkeevvvin.github.io/tags/github/</link>
-    <description>Recent content in Github on kkkeevvvin</description>
+    <title>Github on blo.blo.blog</title>
+    <link>https://blo.blo.blog.github.io/tags/github/</link>
+    <description>Recent content in Github on blo.blo.blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>utf-8</language>
-    <lastBuildDate>Wed, 04 Aug 2021 09:14:28 +0800</lastBuildDate><atom:link href="https://kkkeevvvin.github.io/tags/github/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 04 Aug 2021 09:14:28 +0800</lastBuildDate><atom:link href="https://blo.blo.blog.github.io/tags/github/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>將網頁發佈到Github Page</title>
-      <link>https://kkkeevvvin.github.io/posts/hugo_on_github_page/</link>
+      <link>https://blo.blo.blog.github.io/posts/hugo_on_github_page/</link>
       <pubDate>Wed, 04 Aug 2021 09:14:28 +0800</pubDate>
       
-      <guid>https://kkkeevvvin.github.io/posts/hugo_on_github_page/</guid>
+      <guid>https://blo.blo.blog.github.io/posts/hugo_on_github_page/</guid>
       <description>建立Github repository 登入Github的網頁，右上角會看到：
 點擊加號，再點擊New repository：
 出現建立的表單：
