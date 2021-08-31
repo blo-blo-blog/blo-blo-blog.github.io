@@ -60,14 +60,13 @@ git remote add origin https://github.com/<USERNAME>/<your_repo>.git
 git remote -v
 ```
 
-強制把現在的`branch`變成`main`，然後`push`到你的Github：
-
+強制把現在的`branch`變成`main`。
 ```
 git branch -M main
-git push origin main
 ```
+然後安裝並登入GitHub Desktop（因為筆者不會設定登入認證），接著 `add local repository`，找到`public`這個資料夾。
 
-第一次`push`需要輸入帳號密碼。
+`commit`之後就可以`push`到你的Github了。
 
 <br>
 
@@ -89,14 +88,7 @@ git push origin main
 
 ### 之後
 
-如果有更動，回到專案目錄用`hugo`產生好網頁，接著到`./public`底下執行：
-
-```
-git commit -m "your commit"
-git push origin main
-```
-
-
+如果有更動，回到專案目錄用`hugo`產生好網頁，接著到GitHub Desktop一樣是用`commit`和`push`就可以了。
 
 <br>
 

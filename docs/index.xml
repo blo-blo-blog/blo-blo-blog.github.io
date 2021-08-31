@@ -25,14 +25,15 @@
 git init 將所有檔案加入管理：
 git add . 提交修改：
 git commit -m &amp;quot;first commit&amp;quot; 連上自己的github repo，並且做確認：
-git remote add origin https://github.com/&amp;lt;USERNAME&amp;gt;/&amp;lt;your_repo&amp;gt;.git git remote -v 強制把現在的branch變成main，然後push到你的Github：
-git branch -M main git push origin main 第一次push需要輸入帳號密碼。
+git remote add origin https://github.com/&amp;lt;USERNAME&amp;gt;/&amp;lt;your_repo&amp;gt;.git git remote -v 強制把現在的branch變成main。
+git branch -M main 然後安裝並登入GitHub Desktop（因為筆者不會設定登入認證），接著 add local repository，找到public這個資料夾。
+commit之後就可以push到你的Github了。
 查看你的網頁 在完成上面的內容以後，打開你的repo的設定：
 在左邊的欄位中找到Pages：
 會出現綠色提示框：
 如果其他部份都設定成功，點擊提示框中的超連結，就可以看到跟hugo server產生一樣的網頁了（可能要等伺服器更新）。
-之後 如果有更動，回到專案目錄用hugo產生好網頁，接著到./public底下執行：
-git commit -m &amp;quot;your commit&amp;quot; git push origin main</description>
+之後 如果有更動，回到專案目錄用hugo產生好網頁，接著到GitHub Desktop一樣是用commit和push就可以了。
+參考文件： Build a Personal Website With Github Pages and Hugo</description>
     </item>
     
     <item>
