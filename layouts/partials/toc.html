@@ -1,3 +1,7 @@
+{{- $headers := findRE "<h[1-6].*?>(.|\n])+?</h[1-6]>" .Content -}}
+{{- $has_headers := ge (len $headers) 1 -}}
+{{- if $has_headers -}}
+
 <div class="toc">
     <details {{if (.Param "TocOpen") }} open{{ end }}>
         <summary accesskey="c" title="(Alt + C)">
@@ -8,13 +12,13 @@
             {{- $has_headers := ge (len $headers) 1 -}}
             {{- if $has_headers -}}
 
-            {{- $largest := 6 -}}
-            {{- range $headers -}}
-            {{- $headerLevel := index (findRE "[1-6]" . 1) 0 -}}
-            {{- $headerLevel := len (seq $headerLevel) -}}
-            {{- if lt $headerLevel $largest -}}
-            {{- $largest = $headerLevel -}}
-            {{- end -}}
+                {{- $largest := 6 -}}
+                {{- range $headers -}}
+                {{- $headerLevel := index (findRE "[1-6]" . 1) 0 -}}
+                {{- $headerLevel := len (seq $headerLevel) -}}
+                {{- if lt $headerLevel $largest -}}
+                    {{- $largest = $headerLevel -}}
+                {{- end -}}
             {{- end -}}
 
             {{- $firstHeaderLevel := len (seq (index (findRE "[1-6]" (index $headers 0) 1) 0)) -}}
@@ -91,3 +95,4 @@
         </div>
     </details>
 </div>
+{{- end }}

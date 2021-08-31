@@ -5,11 +5,11 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
-<title>標籤 | blo.blo.blog</title>
+<title>LikeButton | blo.blo.blog</title>
 <meta name="keywords" content="" />
 <meta name="description" content="">
 <meta name="author" content="blo.blo.blog">
-<link rel="canonical" href="https://blo-blo-blog.github.io/tags/" />
+<link rel="canonical" href="https://blo-blo-blog.github.io/tags/likebutton/" />
 <link crossorigin="anonymous" href="/assets/css/stylesheet.min.35cd0f65a15cafa92372b8313deef5960aae04b90ad722f2bbf509eb0468137e.css" integrity="sha256-Nc0PZaFcr6kjcrgxPe71lgquBLkK1yLyu/UJ6wRoE34=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://blo-blo-blog.github.io/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://blo-blo-blog.github.io/favicon-16x16.png">
@@ -19,14 +19,14 @@
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
 <meta name="generator" content="Hugo 0.87.0" />
-<link rel="alternate" type="application/rss+xml" href="https://blo-blo-blog.github.io/tags/index.xml">
-<meta property="og:title" content="標籤" />
+<link rel="alternate" type="application/rss+xml" href="https://blo-blo-blog.github.io/tags/likebutton/index.xml">
+<meta property="og:title" content="LikeButton" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://blo-blo-blog.github.io/tags/" />
+<meta property="og:url" content="https://blo-blo-blog.github.io/tags/likebutton/" />
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="標籤"/>
+<meta name="twitter:title" content="LikeButton"/>
 <meta name="twitter:description" content=""/>
 
 </head>
@@ -88,7 +88,7 @@
             </li>
             <li>
                 <a href="https://blo-blo-blog.github.io/tags/" title="標籤">
-                    <span class="active">標籤</span>
+                    <span>標籤</span>
                 </a>
             </li>
             <li>
@@ -99,34 +99,30 @@
         </ul>
     </nav>
 </header>
-<main class="main">
-<header class="page-header">
-    <h1>標籤</h1>
+<main class="main"> 
+<header class="page-header"><div class="breadcrumbs"><a href="https://blo-blo-blog.github.io">Home</a>&nbsp;»&nbsp;<a href="https://blo-blo-blog.github.io/tags/">標籤</a></div>
+  <h1>LikeButton</h1>
 </header>
 
-<ul class="terms-tags">
-    <li>
-        <a href="https://blo-blo-blog.github.io/tags/git/">git <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="https://blo-blo-blog.github.io/tags/github/">Github <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="https://blo-blo-blog.github.io/tags/github-page/">Github page <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="https://blo-blo-blog.github.io/tags/hugo/">Hugo <sup><strong><sup>3</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="https://blo-blo-blog.github.io/tags/likebutton/">LikeButton <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="https://blo-blo-blog.github.io/tags/likecoin/">LikeCoin <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="https://blo-blo-blog.github.io/tags/papermod/">Papermod <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-</ul>
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2>在網站中加入LikeButton</h2>
+  </header>
+  <section class="entry-content">
+    <p>不知道什麼是Likecoin的人可以先去看看這篇文章。
+這篇文章主要是參考Hugo 安裝 LikeCoin 教學 | WANcatServer。
+Hugo 可以使用自訂 Layout 的方式，在不改變主題的情況下改變網站設計，我們可以透過這個方式在每個文章下放置 LikeButton。
+為了覆寫文章輸出的模板，將 theme 的 layouts 資料夾複製到專案目錄下。
+cp -r theme/&lt;YOUR_THEME&gt;/layouts/ . Hugo 中的 Partial 功能，可以讓你建立小模板，嵌入在頁面中。參考文件。
+在 layouts 的 partials 資料夾建立 likecoin.html，寫入以下內容。你也可以在這裡加上想給讀者看的說明文字（HTML格式）。
+&lt;iframe class=&#34;LikeCoin&#34; height=&#34;235&#34; src=&#34;https://button.like.co/in/embed/{{ .Site.Params.likerID }}/button?referrer={{ .Permalink }}&#34; width=&#34;100%&#34; frameborder=0&gt;&lt;/iframe&gt; 接下來在 config.yml 的params後面加入
+likerID = &#34;&lt;your liker id&gt;&#34; 接著編輯文章使用的模板，通常是 _default/single.html。這就是一個 Go Template，在你想要的地方插入：
+{{ partial &#34;likecoin.html&#34; . }} 建議插在 {{ .Content }} 後面，Like Button 就會接在文章後面。
+Go Template裡面有很多花括號，讓人眼花撩亂，我使用的主題在 {{ .Content }} 附近的程式碼如下：...</p>
+  </section>
+  <footer class="entry-footer">August 31, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;blo.blo.blog</footer>
+  <a class="entry-link" aria-label="post link to 在網站中加入LikeButton" href="https://blo-blo-blog.github.io/posts/hugo_likebutton/"></a>
+</article>
     </main>
     <footer class="footer">
     <span>&copy; 2021 <a href="https://blo-blo-blog.github.io">blo.blo.blog</a></span>
