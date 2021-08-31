@@ -6,7 +6,7 @@ theme: PaperMod
 languageCode: utf-8
 defaultContentLanguage: zh-hant
 
-publishdir: "./doc"
+publishdir: "./docs"
 enableInlineShortcodes: true
 enableRobotsTXT: true
 # buildDrafts: false
