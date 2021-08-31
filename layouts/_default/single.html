@@ -29,7 +29,7 @@
     {{- if not (.Param "disableAnchoredHeadings") }}
     {{- partial "anchored_headings.html" .Content -}}
     {{- else }}{{ .Content }}{{ end }}
-    <!-- likecoin here -->
+    <!-- likecoin below -->
     {{ partial "likecoin.html" . }}
   </div>
   <footer class="post-footer">
