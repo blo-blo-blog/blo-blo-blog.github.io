@@ -1,4 +1,4 @@
-baseURL: "https://blo.blo.blog.github.io"
+baseURL: "https://blo-blo-blog.github.io"
 title: "blo.blo.blog"
 # paginate: 10 # 一頁放幾筆資料
 theme: PaperMod

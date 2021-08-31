@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Papermod on blo.blo.blog</title>
-    <link>https://blo.blo.blog.github.io/tags/papermod/</link>
+    <link>https://blo-blo-blog.github.io/tags/papermod/</link>
     <description>Recent content in Papermod on blo.blo.blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>utf-8</language>
-    <lastBuildDate>Tue, 03 Aug 2021 09:53:04 +0800</lastBuildDate><atom:link href="https://blo.blo.blog.github.io/tags/papermod/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 03 Aug 2021 09:53:04 +0800</lastBuildDate><atom:link href="https://blo-blo-blog.github.io/tags/papermod/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>用Hugo製作網頁</title>
-      <link>https://blo.blo.blog.github.io/posts/hugo_from_scratch/</link>
+      <link>https://blo-blo-blog.github.io/posts/hugo_from_scratch/</link>
       <pubDate>Tue, 03 Aug 2021 09:53:04 +0800</pubDate>
       
-      <guid>https://blo.blo.blog.github.io/posts/hugo_from_scratch/</guid>
+      <guid>https://blo-blo-blog.github.io/posts/hugo_from_scratch/</guid>
       <description>安裝Hugo 這篇以支援snap的Linux版本為例，下載擴充版本的Hugo。
 snap install hugo --channel=extended 其他作業系統可以到 Install Hugo | Hugo 找到相應的指示安裝。
 檢查是否安裝成功：
