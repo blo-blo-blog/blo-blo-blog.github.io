@@ -114,7 +114,7 @@ params:
             嗨！
     socialIcons:
         - name: github
-          url: "https://github.com/blo-blo-blog/blo.blo.blog.github.io"
+          url: "https://github.com/blo-blo-blog/blo-blo-blog.github.io"
         - name: instagram
           url: "https://www.instagram.com/blo.blo.blog/"
         # - name: other
