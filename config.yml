@@ -18,6 +18,17 @@ enableRobotsTXT: true
 # minify:
     # disableXML: true
     # minifyOutput: true
+    
+outputs:
+    home:
+        - HTML
+        - RSS
+        - JSON
+
+markup:
+    goldmark:
+        renderer:
+            unsafe: true
 
 languages:
     zh-hant:
@@ -27,16 +38,16 @@ languages:
             main:
                 - name: "文章列表"
                   url: archives
-                  weight: 5
-                - name: "搜尋"
-                  url: search/
-                  weight: 15
-                - name: "標籤"
-                  url: tags/
-                  weight: 10
+                  weight: 1
                 - name: "分類"
                   url: categories/
-                  weight: 10
+                  weight: 2
+                - name: "標籤"
+                  url: tags/
+                  weight: 3
+                - name: "搜尋"
+                  url: search
+                  weight: 4
 
     # en:
     #     languageName: "English"
@@ -59,11 +70,6 @@ languages:
     #               url: series
     #               weight: 6
 
-outputs:
-    home:
-        - HTML
-        - RSS
-        - JSON
 
 params:
     # env: production # to enable google analytics, opengraph, twitter-cards and schema.
@@ -83,6 +89,7 @@ params:
     ShowToc: true
     # comments: false
     # images: ["papermod-cover.png"]
+    # images: "images/hugo_on_github_page/right_upper_conner.jpg"
 
     likerID: "kkkevin"
 
@@ -153,10 +160,6 @@ taxonomies:
     tag: tags
     series: series
 
-markup:
-    goldmark:
-        renderer:
-            unsafe: true
 #     highlight:
 #         # anchorLineNos: true
 #         codeFences: true
@@ -165,32 +168,32 @@ markup:
 #         # noClasses: false
 #         style: monokai
 
-privacy:
-    disqus:
-         disable: true
-
-    googleAnalytics:
-        disable: true
-
-    vimeo:
-        disabled: true
-        simple: true
-
-    twitter:
-        disabled: true
-        enableDNT: true
-        simple: true
-
-    instagram:
-        disabled: true
-        simple: true
-
-    youtube:
-        disabled: true
-        privacyEnhanced: true
-
-services:
-    instagram:
-        disableInlineCSS: true
-    twitter:
-        disableInlineCSS: true
+# privacy:
+#     disqus:
+#          disable: true
+#
+#     googleAnalytics:
+#         disable: true
+#
+#     vimeo:
+#         disabled: true
+#         simple: true
+#
+#     twitter:
+#         disabled: true
+#         enableDNT: true
+#         simple: true
+#
+#     instagram:
+#         disabled: true
+#         simple: true
+#
+#     youtube:
+#         disabled: true
+#         privacyEnhanced: true
+#
+# services:
+#     instagram:
+#         disableInlineCSS: true
+#     twitter:
+#         disableInlineCSS: true
