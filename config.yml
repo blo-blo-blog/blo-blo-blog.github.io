@@ -6,7 +6,6 @@ theme: PaperMod
 languageCode: utf-8
 defaultContentLanguage: zh-hant
 
-publishdir: "../kkkeevvvin.github.io"
 enableInlineShortcodes: true
 enableRobotsTXT: true
 # buildDrafts: false
