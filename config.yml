@@ -13,7 +13,7 @@ enableRobotsTXT: true
 # buildFuture: false
 # buildExpired: false
 # enableEmoji: true
-# googleAnalytics: UA-123-45
+googleAnalytics: G-YNNJDS4LLV
 
 # minify:
     # disableXML: true
@@ -72,7 +72,7 @@ languages:
 
 
 params:
-    # env: production # to enable google analytics, opengraph, twitter-cards and schema.
+    env: production # to enable google analytics, opengraph, twitter-cards and schema.
     # description: "Theme PaperMod - https://github.com/adityatelange/hugo-PaperMod"
     author: blo.blo.blog
     # author: ["Me", "You"] # multiple authors
