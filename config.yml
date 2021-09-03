@@ -3,6 +3,7 @@ title: "blo.blo.blog"
 # paginate: 10 # 一頁放幾筆資料
 theme: PaperMod
 
+rssLimit: 2
 languageCode: utf-8
 defaultContentLanguage: zh-hant
 
@@ -117,6 +118,8 @@ params:
           url: "https://github.com/blo-blo-blog/blo-blo-blog.github.io"
         - name: instagram
           url: "https://www.instagram.com/blo.blo.blog/"
+        - name: rss
+          url: "/index.xml"
         # - name: other
         #   url: "https://liker.land/kkkevin/"
 

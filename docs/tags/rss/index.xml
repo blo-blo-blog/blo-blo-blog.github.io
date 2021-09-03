@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Hugo on blo.blo.blog</title>
-    <link>https://blo-blo-blog.github.io/tags/hugo/</link>
-    <description>Recent content in Hugo on blo.blo.blog</description>
+    <title>RSS on blo.blo.blog</title>
+    <link>https://blo-blo-blog.github.io/tags/rss/</link>
+    <description>Recent content in RSS on blo.blo.blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>utf-8</language>
-    <lastBuildDate>Thu, 02 Sep 2021 17:16:37 +0800</lastBuildDate><atom:link href="https://blo-blo-blog.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 02 Sep 2021 17:16:37 +0800</lastBuildDate><atom:link href="https://blo-blo-blog.github.io/tags/rss/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>RSS簡介與Newsboat的使用</title>
       <link>https://blo-blo-blog.github.io/posts/rss_newsboat_hugo/</link>
@@ -22,18 +22,6 @@ sudo snap install newsboat Distrotube深入解析Newsboat RSS Reader 因為筆�
 4:06
  以下都需要用空格隔開 自訂標題：在網址的後面加上 &amp;ldquo;~&amp;lt;YOUR_CUSTOM_TITLE&amp;gt;&amp;rdquo; 標籤：不需要雙引號，直接輸入你的標籤 註解： &amp;ldquo;!&amp;lt;YOUR_COMMENT&amp;gt;&amp;rdquo;  5:22
 youtube channel rss feed</description>
-    </item>
-    
-    <item>
-      <title>在網站中加入Google Analytics</title>
-      <link>https://blo-blo-blog.github.io/posts/hugo_ga/</link>
-      <pubDate>Thu, 02 Sep 2021 16:26:01 +0800</pubDate>
-      
-      <guid>https://blo-blo-blog.github.io/posts/hugo_ga/</guid>
-      <description>首先可以參考Google Analytics GA是什麼？。
-取得「評估ID」之後，在 config.yml 中加上：
-googleAnalytics: &amp;lt;YOUR_TRACKING_ID&amp;gt; 並且在 params 下面加上：
-env: production </description>
     </item>
     
   </channel>

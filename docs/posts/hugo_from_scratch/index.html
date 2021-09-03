@@ -31,7 +31,7 @@ theme: &quot;PaperMod&quot;
 <link rel="mask-icon" href="https://blo-blo-blog.github.io/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<meta name="generator" content="Hugo 0.87.0" />
+<meta name="generator" content="Hugo 0.88.0" />
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-YNNJDS4LLV"></script>
 <script>
@@ -238,25 +238,25 @@ theme: &quot;PaperMod&quot;
 
   <div class="post-content"><h3 id="安裝hugo">安裝Hugo<a hidden class="anchor" aria-hidden="true" href="#安裝hugo">#</a></h3>
 <p>這篇以支援<code>snap</code>的Linux版本為例，下載擴充版本的Hugo。</p>
-<pre><code>snap install hugo --channel=extended
+<pre tabindex="0"><code>snap install hugo --channel=extended
 </code></pre><p>其他作業系統可以到 <a href="https://gohugo.io/getting-started/installing">Install Hugo | Hugo</a> 找到相應的指示安裝。</p>
 <p>檢查是否安裝成功：</p>
-<pre><code>hugo version
+<pre tabindex="0"><code>hugo version
 </code></pre><!--看要不要用asciinema紀錄指令執行的狀況-->
 <p>若要解除安裝：</p>
-<pre><code>snap remove hugo
+<pre tabindex="0"><code>snap remove hugo
 </code></pre><br>
 <h3 id="開始網頁專案">開始網頁專案<a hidden class="anchor" aria-hidden="true" href="#開始網頁專案">#</a></h3>
 <p>確定安裝好Hugo之後，選好要存放網頁專案的目錄，用指令</p>
 <blockquote>
-<pre><code>hugo new site mywebsite -f yml
+<pre tabindex="0"><code>hugo new site mywebsite -f yml
 </code></pre><ul>
 <li>mywebsite可以替換成其他你想要的名字。</li>
 <li><code>-f yml</code>指定使用<code>yml</code>格式，因為<code>yml/yaml</code>的格式比起<code>toml</code>更容易閱讀，根據Papermod的作者<a href="https://github.com/adityatelange">adityatelange</a>的<a href="https://adityatelange.github.io/hugo-PaperMod/posts/papermod/papermod-installation/#intro">說法</a>，所以以下也將採用<code>yml</code>的格式。如果有需要，你可以很容易的找到<a href="https://search.brave.com/search?q=yml+to+toml&amp;source=desktop">YML to TOML</a>的轉換器。</li>
 </ul>
 </blockquote>
 <p>可以看到hugo幫你建立好的檔案架構如下。</p>
-<pre><code>mywebsite/
+<pre tabindex="0"><code>mywebsite/
 ├── archetypes
 │   └── default.md
 ├── config.yml
@@ -268,14 +268,14 @@ theme: &quot;PaperMod&quot;
 </code></pre><h3 id="選擇主題">選擇主題<a hidden class="anchor" aria-hidden="true" href="#選擇主題">#</a></h3>
 <p>我選擇的主題是<a href="https://adityatelange.github.io/hugo-PaperMod/">PaperMod</a>，因為這個主題裡面有很不錯的指引，也有舒服的版面設計。</p>
 <p>移動到<code>mywebsite</code>底下執行以下指令，把PaperMod的資料複製到<code>mywebsite/themes/PaperMod</code>。</p>
-<pre><code>git clone https://github.com/adityatelange/hugo-PaperMod themes/PaperMod --depth=1
+<pre tabindex="0"><code>git clone https://github.com/adityatelange/hugo-PaperMod themes/PaperMod --depth=1
 </code></pre><p>接著打開<code>mywebsite/config.yml</code>在最後加入</p>
-<pre><code>theme: &quot;PaperMod&quot;
+<pre tabindex="0"><code>theme: &quot;PaperMod&quot;
 </code></pre><br>
 <h3 id="新增文章">新增文章<a hidden class="anchor" aria-hidden="true" href="#新增文章">#</a></h3>
-<pre><code>hugo new posts/my-first-post.md
+<pre tabindex="0"><code>hugo new posts/my-first-post.md
 </code></pre><p>新增的文章會出現在<code>mywebsite/content/posts/</code>之下。你可以試著更動<code>my-first-post.md</code>，一開始會長這樣：</p>
-<pre><code>---
+<pre tabindex="0"><code>---
 title: &quot;My First Post&quot;
 date: 2019-03-26T08:47:11+01:00
 draft: true
@@ -289,7 +289,7 @@ draft: true
 <h3 id="在本機端預覽">在本機端預覽<a hidden class="anchor" aria-hidden="true" href="#在本機端預覽">#</a></h3>
 <p>在本機開啟一個網頁伺服器：</p>
 <blockquote>
-<pre><code>hugo server
+<pre tabindex="0"><code>hugo server
 </code></pre><ul>
 <li>在最後加上<code>-D</code>，可以預覽草稿</li>
 </ul>
@@ -298,7 +298,7 @@ draft: true
 <br>
 <h3 id="產生靜態網頁">產生靜態網頁<a hidden class="anchor" aria-hidden="true" href="#產生靜態網頁">#</a></h3>
 <p>Hugo就是用指令<code>hugo</code>來產生網頁的：</p>
-<pre><code>hugo
+<pre tabindex="0"><code>hugo
 </code></pre><p>預設的生成結果會在<code>mywebsite/public/</code>，可以用<code>-d</code>來指定路徑，或是在設定檔<code>config.yml</code>中設定<code>publishdir</code>。</p>
 <p>如果要連同草稿一起產生，加上<code>-D</code>。</p>
 <p>使用<code>hugo help</code>知道更多詳細的參數。</p>
