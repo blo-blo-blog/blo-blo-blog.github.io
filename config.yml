@@ -3,7 +3,6 @@ title: "blo.blo.blog"
 # paginate: 10 # 一頁放幾筆資料
 theme: PaperMod
 
-rssLimit: 2
 languageCode: utf-8
 defaultContentLanguage: zh-hant
 
@@ -137,8 +136,8 @@ params:
     #     google:
     #         SiteVerificationTag: "XYZabc"
 
-    # assets:
-    #     favicon: "<link / abs url>"
+    assets:
+        favicon: "https://img.icons8.com/cotton/64/000000/binoculars.png"
     #     favicon16x16: "<link / abs url>"
     #     favicon32x32: "<link / abs url>"
     #     apple_touch_icon: "<link / abs url>"

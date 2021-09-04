@@ -37,5 +37,72 @@ googleAnalytics: &amp;lt;YOUR_TRACKING_ID&amp;gt; 並且在 params 下面加上�
 env: production 接著去點點看你的網站，如果成功的話可以在GA的頁面，看到活動紀錄。</description>
     </item>
     
+    <item>
+      <title>在網站中加入LikeButton</title>
+      <link>https://blo-blo-blog.github.io/posts/hugo_likebutton/</link>
+      <pubDate>Tue, 31 Aug 2021 16:10:27 +0800</pubDate>
+      
+      <guid>https://blo-blo-blog.github.io/posts/hugo_likebutton/</guid>
+      <description>不知道什麼是Likecoin的人可以先去看看這篇文章。
+這篇文章主要是參考Hugo 安裝 LikeCoin 教學 | WANcatServer。
+Hugo 可以使用自訂 Layout 的方式，在不改變主題的情況下改變網站設計，我們可以透過這個方式在每個文章下放置 LikeButton。
+為了覆寫文章輸出的模板，將 theme 的 layouts 資料夾複製到專案目錄下。
+cp -r theme/&amp;lt;YOUR_THEME&amp;gt;/layouts/ . Hugo 中的 Partial 功能，可以讓你建立小模板，嵌入在頁面中。參考文件。
+在 layouts 的 partials 資料夾建立 likecoin.html，寫入以下內容。你也可以在這裡加上想給讀者看的說明文字（HTML格式）。
+&amp;lt;iframe class=&amp;quot;LikeCoin&amp;quot; height=&amp;quot;235&amp;quot; src=&amp;quot;https://button.like.co/in/embed/{{ .Site.Params.likerID }}/button?referrer={{ .Permalink }}&amp;quot; width=&amp;quot;100%&amp;quot; frameborder=0&amp;gt;&amp;lt;/iframe&amp;gt; 接下來在 config.yml 的params後面加入
+likerID = &amp;quot;&amp;lt;your liker id&amp;gt;&amp;quot; 接著編輯文章使用的模板，通常是 _default/single.html。這就是一個 Go Template，在你想要的地方插入：
+{{ partial &amp;quot;likecoin.html&amp;quot; . }} 建議插在 {{ .Content }} 後面，Like Button 就會接在文章後面。
+Go Template裡面有很多花括號，讓人眼花撩亂，我使用的主題在 {{ .Content }} 附近的程式碼如下：</description>
+    </item>
+    
+    <item>
+      <title>將網頁發佈到Github Page</title>
+      <link>https://blo-blo-blog.github.io/posts/hugo_on_github_page/</link>
+      <pubDate>Wed, 04 Aug 2021 09:14:28 +0800</pubDate>
+      
+      <guid>https://blo-blo-blog.github.io/posts/hugo_on_github_page/</guid>
+      <description>建立Github repository 登入Github的網頁，右上角會看到：
+點擊加號，再點擊New repository：
+出現建立的表單：
+如果是要作為主要的個人網站，Repository name建議可以使用&amp;lt;USERNAME&amp;gt;.github.io。如果你的github repo是命名成&amp;lt;USERNAME&amp;gt;.github.io的話，你的網頁就會發布在&amp;lt;USERNAME&amp;gt;.github.io；如果不是，會在&amp;lt;USERNAME&amp;gt;.github.io/&amp;lt;your_repo&amp;gt;
+勾選Public，只有付費版本可以用Private的repository來建立Github Page。其餘的選項可以自行決定。
+最後按下Create repository。
+上傳到Github repository 如果沒有使用過git，可以先參考Git 教學(1) : Git 的基本使用，完成你的git設定。
+這裡以hugo專案預設的存檔路徑./public為例。
+移動到public底下，開始用git管理這個資料夾：
+git init 將所有檔案加入管理：
+git add . 提交修改：
+git commit -m &amp;quot;first commit&amp;quot; 連上自己的github repo，並且做確認：
+git remote add origin https://github.com/&amp;lt;USERNAME&amp;gt;/&amp;lt;your_repo&amp;gt;.git git remote -v 強制把現在的branch變成main。
+git branch -M main 然後安裝並登入GitHub Desktop（因為筆者不會設定登入認證），接著 add local repository，找到public這個資料夾。
+commit之後就可以push到你的Github了。
+查看你的網頁 在完成上面的內容以後，打開你的repo的設定：
+在左邊的欄位中找到Pages：
+會出現綠色提示框：
+如果其他部份都設定成功，點擊提示框中的超連結，就可以看到跟hugo server產生一樣的網頁了（可能要等伺服器更新）。
+之後 如果有更動，回到專案目錄用hugo產生好網頁，接著到GitHub Desktop一樣是用commit和push就可以了。
+參考文件： Build a Personal Website With Github Pages and Hugo</description>
+    </item>
+    
+    <item>
+      <title>用Hugo製作網頁</title>
+      <link>https://blo-blo-blog.github.io/posts/hugo_from_scratch/</link>
+      <pubDate>Tue, 03 Aug 2021 09:53:04 +0800</pubDate>
+      
+      <guid>https://blo-blo-blog.github.io/posts/hugo_from_scratch/</guid>
+      <description>安裝Hugo 這篇以支援snap的Linux版本為例，下載擴充版本的Hugo。
+snap install hugo --channel=extended 其他作業系統可以到 Install Hugo | Hugo 找到相應的指示安裝。
+檢查是否安裝成功：
+hugo version  若要解除安裝：
+snap remove hugo 
+開始網頁專案 確定安裝好Hugo之後，選好要存放網頁專案的目錄，用指令
+ hugo new site mywebsite -f yml  mywebsite可以替換成其他你想要的名字。 -f yml指定使用yml格式，因為yml/yaml的格式比起toml更容易閱讀，根據Papermod的作者adityatelange的說法，所以以下也將採用yml的格式。如果有需要，你可以很容易的找到YML to TOML的轉換器。   可以看到hugo幫你建立好的檔案架構如下。
+mywebsite/ ├── archetypes │ └── default.md ├── config.yml ├── content ├── data ├── layouts ├── static └── themes 選擇主題 我選擇的主題是PaperMod，因為這個主題裡面有很不錯的指引，也有舒服的版面設計。
+移動到mywebsite底下執行以下指令，把PaperMod的資料複製到mywebsite/themes/PaperMod。
+git clone https://github.com/adityatelange/hugo-PaperMod themes/PaperMod --depth=1 接著打開mywebsite/config.yml在最後加入
+theme: &amp;quot;PaperMod&amp;quot; 
+新增文章 hugo new posts/my-first-post.</description>
+    </item>
+    
   </channel>
 </rss>

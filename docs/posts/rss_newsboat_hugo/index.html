@@ -22,7 +22,7 @@ youtube channel rss feed">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.min.35cd0f65a15cafa92372b8313deef5960aae04b90ad722f2bbf509eb0468137e.css" integrity="sha256-Nc0PZaFcr6kjcrgxPe71lgquBLkK1yLyu/UJ6wRoE34=" rel="preload stylesheet" as="style">
 <script defer crossorigin="anonymous" src="/assets/js/highlight.min.7680afc38aa6b15ddf158a4f3780b7b1f7dde7e91d26f073e6229bb7a0793c92.js" integrity="sha256-doCvw4qmsV3fFYpPN4C3sffd5&#43;kdJvBz5iKbt6B5PJI="
     onload="hljs.initHighlightingOnLoad();"></script>
-<link rel="icon" href="https://blo-blo-blog.github.io/favicon.ico">
+<link rel="icon" href="https://img.icons8.com/cotton/64/000000/binoculars.png">
 <link rel="icon" type="image/png" sizes="16x16" href="https://blo-blo-blog.github.io/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://blo-blo-blog.github.io/favicon-32x32.png">
 <link rel="apple-touch-icon" href="https://blo-blo-blog.github.io/apple-touch-icon.png">
@@ -101,8 +101,8 @@ youtube channel rss feed"/>
   "keywords": [
     "RSS", "Newsboat", "Hugo"
   ],
-  "articleBody": "什麼是RSS? 下面這個好和弦的影片裡有詳細的介紹。\n  4:24 開始介紹Newsboat\n安裝Newsboat 如果有安裝snap，可以直接使用\nsudo snap install newsboat 進入程式之後可以按快捷鍵?，查看快捷鍵提示，也可以看#我的Newsboat設定自訂快捷鍵。\nDistrotube深入解析Newsboat RSS Reader 因為筆者特別喜歡Newsboat的簡潔版面和方便的鍵盤操作，所以另外又找到這個影片，對Newsboat有更進一步的了解。\n  var tag = document.createElement('script'); tag.src = \"https://www.youtube.com/player_api\"; var firstScriptTag = document.getElementsByTagName('script')[0]; firstScriptTag.parentNode.insertBefore(tag, firstScriptTag); var player; function onYouTubePlayerAPIReady() { ytplayer = new YT.Player('ytplayer', { videoId: \"CJXdQTGm1jg\", }); console.log(ytplayer); } function playerSeekTo(player, seconds) { player.seekTo(seconds); }  1:46\n如何編輯 urls\n4:06\n 以下都需要用空格隔開 自訂標題：在網址的後面加上 “~” 標籤：不需要雙引號，直接輸入你的標籤 註解： “!”  5:22\nyoutube channel rss feed\n https://www.youtube.com/feeds/videos.xml?channel_id= https://www.youtube.com/feeds/videos.xml?playlist_id=  7:55\n用comment做分類\n9:33\n更多rss\ngitlab github 在網址後面加上.atom\nsourceforge 在網址後加上/feed\n我的Newsboat設定 因為我是用snap下載，所以我的設定路徑是在~snap/newsboat/4780/.newsboat/config，以下是設定檔的內容：\n# Ubuntu好像只能這樣設定，會用預設的瀏覽器打開 browser \"xdg-open\" 可以參考這個。\n找到網站或Podcast的RSS連結 大部分有提供RSS的部落格，都會有一個類似wifi的圖示，那個就是他的RSS連結。如果沒有可以嘗試檢視網頁原始碼，搜尋rss、atom、xml或是url，有很大的機率可以找到。\nPodcast都會用RSS做推播，所以理論上都可以找到各個Podcast的RSS連結。可以用同樣的方法找到RSS連結，但是筆者在Spotify上嘗試過卻找不到。\nPtt看板的RSS連結 https://www.ptt.cc/atom/.xml Hugo網站的RSS Hugo的RSS模板在layouts/_default/rss.xml。\n產生出來的RSS連結會在https:///index.xml。\n",
-  "wordCount" : "90",
+  "articleBody": "什麼是RSS? 下面這個好和弦的影片裡有詳細的介紹。\n  4:24 開始介紹Newsboat\n安裝Newsboat 如果有安裝snap，可以直接使用\nsudo snap install newsboat 進入程式之後可以按快捷鍵?，查看快捷鍵提示，也可以看#我的Newsboat設定自訂快捷鍵。\nDistrotube深入解析Newsboat RSS Reader 因為筆者特別喜歡Newsboat的簡潔版面和方便的鍵盤操作，所以另外又找到這個影片，對Newsboat有更進一步的了解。\n  var tag = document.createElement('script'); tag.src = \"https://www.youtube.com/player_api\"; var firstScriptTag = document.getElementsByTagName('script')[0]; firstScriptTag.parentNode.insertBefore(tag, firstScriptTag); var player; function onYouTubePlayerAPIReady() { ytplayer = new YT.Player('ytplayer', { videoId: \"CJXdQTGm1jg\", }); console.log(ytplayer); } function playerSeekTo(player, seconds) { player.seekTo(seconds); }  1:46\n如何編輯 urls\n4:06\n 以下都需要用空格隔開 自訂標題：在網址的後面加上 “~” 標籤：不需要雙引號，直接輸入你的標籤 註解： “!”  5:22\nyoutube channel rss feed\n https://www.youtube.com/feeds/videos.xml?channel_id= https://www.youtube.com/feeds/videos.xml?playlist_id=  7:55\n用comment做分類\n9:33\n更多rss\ngitlab github 在網址後面加上.atom\nsourceforge 在網址後加上/feed\n我的Newsboat設定 因為我是用snap下載，所以我的設定路徑是在~snap/newsboat/4780/.newsboat/config，以下是設定檔的內容：\n# Ubuntu好像只能這樣設定，會用預設的瀏覽器打開 browser \"xdg-open\" 可以參考這個。\n找到網站或Podcast的RSS連結 大部分有提供RSS的部落格，都會有一個類似wifi的圖示，那個就是他的RSS連結。如果沒有可以嘗試檢視網頁原始碼，搜尋rss、atom、xml或是url，有很大的機率可以找到。\nPodcast都會用RSS做推播，所以理論上都可以找到各個Podcast的RSS連結。可以用同樣的方法找到RSS連結，但是筆者在Spotify上嘗試過卻找不到。\nPtt看板的RSS連結 https://www.ptt.cc/atom/.xml Hugo網站的RSS Hugo的RSS模板在layouts/_default/rss.xml。\n產生出來的RSS連結會在https:///index.xml。\n記得把我的部落格加到你的RSS閱讀器喔～\n",
+  "wordCount" : "91",
   "inLanguage": "zh-hant",
   "datePublished": "2021-09-02T17:16:37+08:00",
   "dateModified": "2021-09-02T17:16:37+08:00",
@@ -119,7 +119,7 @@ youtube channel rss feed"/>
     "name": "blo.blo.blog",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://blo-blo-blog.github.io/favicon.ico"
+      "url": "https://img.icons8.com/cotton/64/000000/binoculars.png"
     }
   }
 }
@@ -311,6 +311,7 @@ browser &quot;xdg-open&quot;
 </code></pre><h3 id="hugo網站的rss">Hugo網站的RSS<a hidden class="anchor" aria-hidden="true" href="#hugo網站的rss">#</a></h3>
 <p>Hugo的RSS模板在<code>layouts/_default/rss.xml</code>。</p>
 <p>產生出來的RSS連結會在<code>https://&lt;WEBSITE_URLS&gt;/index.xml</code>。</p>
+<p>記得把<a href="/index.xml">我的部落格</a>加到你的RSS閱讀器喔～</p>
 
 
     

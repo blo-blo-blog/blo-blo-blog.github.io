@@ -89,3 +89,5 @@ https://www.ptt.cc/atom/<BROAD_NAME>.xml
 Hugo的RSS模板在`layouts/_default/rss.xml`。
 
 產生出來的RSS連結會在`https://<WEBSITE_URLS>/index.xml`。
+
+記得把[我的部落格](/index.xml)加到你的RSS閱讀器喔～
