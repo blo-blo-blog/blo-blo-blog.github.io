@@ -137,11 +137,11 @@ params:
     #         SiteVerificationTag: "XYZabc"
 
     assets:
-        favicon: "https://img.icons8.com/cotton/64/000000/binoculars.png"
-    #     favicon16x16: "<link / abs url>"
-    #     favicon32x32: "<link / abs url>"
-    #     apple_touch_icon: "<link / abs url>"
-    #     safari_pinned_tab: "<link / abs url>"
+        favicon: "https://img.icons8.com/cotton/512/000000/sun--v3.png"
+        favicon16x16: "https://img.icons8.com/cotton/512/000000/sun--v3.png"
+        favicon32x32: "https://img.icons8.com/cotton/512/000000/sun--v3.png"
+        apple_touch_icon: "https://img.icons8.com/cotton/512/000000/sun--v3.png"
+        safari_pinned_tab: "https://img.icons8.com/cotton/512/000000/sun--v3.png"
 
     # cover:
     #     hidden: true # hide everywhere but not in structured data
