@@ -14,7 +14,7 @@ enableRobotsTXT: true
 # buildExpired: false
 # enableEmoji: true
 googleAnalytics: G-YNNJDS4LLV
-disqusShortname: disqus_m5RTeoBkKz
+
 # minify:
     # disableXML: true
     # minifyOutput: true
