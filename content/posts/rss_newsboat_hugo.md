@@ -18,9 +18,12 @@ weight: 0
 ### 安裝Newsboat
 
 如果有安裝`snap`，可以直接使用
+
 ```
 sudo snap install newsboat
 ```
+
+進入程式之後可以按快捷鍵`?`，查看快捷鍵提示，也可以看[#我的Newsboat設定](/posts/rss_newsboat_hugo/#hugo%E7%B6%B2%E7%AB%99%E7%9A%84rss)自訂快捷鍵。
 
 ### Distrotube深入解析Newsboat RSS Reader
 
@@ -67,7 +70,7 @@ sourceforge 在網址後加上`/feed`
 # Ubuntu好像只能這樣設定，會用預設的瀏覽器打開
 browser "xdg-open" 
 ```
-可以參考[這個](https://gist.github.com/cirrusUK/f0c880efc242e4751df9)
+可以參考[這個](https://gist.github.com/cirrusUK/f0c880efc242e4751df9)。
 
 ### 找到網站或Podcast的RSS連結
 

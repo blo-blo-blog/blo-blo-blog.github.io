@@ -20,3 +20,5 @@ googleAnalytics: <YOUR_TRACKING_ID>
 ```
 env: production
 ```
+
+接著去點點看你的網站，如果成功的話可以在GA的頁面，看到活動紀錄。
