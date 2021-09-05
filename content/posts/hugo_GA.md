@@ -1,5 +1,5 @@
 ---
-title: "在網站中加入Google Analytics"
+title: "在Hugo網站中加入Google Analytics"
 date: 2021-09-02T16:26:01+08:00
 draft: ture
 categories: ["個人網站"]

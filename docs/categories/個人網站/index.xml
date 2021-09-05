@@ -6,9 +6,23 @@
     <description>Recent content in 個人網站 on blo.blo.blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>utf-8</language>
-    <lastBuildDate>Thu, 02 Sep 2021 16:26:01 +0800</lastBuildDate><atom:link href="https://blo-blo-blog.github.io/categories/%E5%80%8B%E4%BA%BA%E7%B6%B2%E7%AB%99/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 05 Sep 2021 11:33:30 +0800</lastBuildDate><atom:link href="https://blo-blo-blog.github.io/categories/%E5%80%8B%E4%BA%BA%E7%B6%B2%E7%AB%99/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>在網站中加入Google Analytics</title>
+      <title>在Hugo網站中加入Favicon</title>
+      <link>https://blo-blo-blog.github.io/posts/hugo_favicon/</link>
+      <pubDate>Sun, 05 Sep 2021 11:33:30 +0800</pubDate>
+      
+      <guid>https://blo-blo-blog.github.io/posts/hugo_favicon/</guid>
+      <description>Favicon是什麼？ 維基百科 是這麼說的：「Favicon是favorites icon的縮寫，亦被稱為website icon（網站圖示）、page icon（頁面圖示）或urlicon（URL圖示）。Favicon是與某個網站或網頁相關聯的圖示。」
+Favicon可以讓網站更容易被記得，或是在Android或iOS的手機中藉由「加入主畫面」的功能產生一個web app。
+Hugo後端的設定 只要在config.yml中加入：
+params: assets: favicon: &amp;quot;&amp;lt;link / abs url&amp;gt;&amp;quot; favicon16x16: &amp;quot;&amp;lt;link / abs url&amp;gt;&amp;quot; favicon32x32: &amp;quot;&amp;lt;link / abs url&amp;gt;&amp;quot; apple_touch_icon: &amp;quot;&amp;lt;link / abs url&amp;gt;&amp;quot; safari_pinned_tab: &amp;quot;&amp;lt;link / abs url&amp;gt;&amp;quot; &amp;lt;link / abs url &amp;gt;是你的favicon來源，筆者是使用ICONS8 提供的免費favicon，在這裡直接填入我選擇的favicon的連結。也可以將favicon的檔案儲存在./static裡面，但是可能載入的速度會比較慢。
+可以藉由修改./layouts/partials/head.html更深入的設定favicon的輸出。
+參考文件 Where do I put my favicon with Hugo | stackoverflow Adding Custom Favicon(s) | PaperMod </description>
+    </item>
+    
+    <item>
+      <title>在Hugo網站中加入Google Analytics</title>
       <link>https://blo-blo-blog.github.io/posts/hugo_ga/</link>
       <pubDate>Thu, 02 Sep 2021 16:26:01 +0800</pubDate>
       
@@ -20,7 +34,7 @@ env: production 接著去點點看你的網站，如果成功的話可以在GA�
     </item>
     
     <item>
-      <title>在網站中加入LikeButton</title>
+      <title>在Hugo網站中加入LikeButton</title>
       <link>https://blo-blo-blog.github.io/posts/hugo_likebutton/</link>
       <pubDate>Tue, 31 Aug 2021 16:10:27 +0800</pubDate>
       

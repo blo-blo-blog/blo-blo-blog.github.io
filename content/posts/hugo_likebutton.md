@@ -1,5 +1,5 @@
 ---
-title: "在網站中加入LikeButton"
+title: "在Hugo網站中加入LikeButton"
 date: 2021-08-31T16:10:27+08:00
 draft: false
 categories: ["個人網站"]

@@ -57,7 +57,7 @@ youtube channel rss feed</description>
     </item>
     
     <item>
-      <title>在網站中加入Google Analytics</title>
+      <title>在Hugo網站中加入Google Analytics</title>
       <link>https://blo-blo-blog.github.io/posts/hugo_ga/</link>
       <pubDate>Thu, 02 Sep 2021 16:26:01 +0800</pubDate>
       
@@ -69,7 +69,7 @@ env: production 接著去點點看你的網站，如果成功的話可以在GA�
     </item>
     
     <item>
-      <title>在網站中加入LikeButton</title>
+      <title>在Hugo網站中加入LikeButton</title>
       <link>https://blo-blo-blog.github.io/posts/hugo_likebutton/</link>
       <pubDate>Tue, 31 Aug 2021 16:10:27 +0800</pubDate>
       

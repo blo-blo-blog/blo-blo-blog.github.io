@@ -2,7 +2,7 @@
 title: "在Hugo網站中加入Favicon"
 date: 2021-09-05T11:33:30+08:00
 draft: false
-categories: [""]
+categories: ["個人網站"]
 tags: ["favicon","Hugo","Apple touch icon"]
 weight: 0
 ---

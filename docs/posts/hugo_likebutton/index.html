@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
-<title>在網站中加入LikeButton | blo.blo.blog</title>
+<title>在Hugo網站中加入LikeButton | blo.blo.blog</title>
 <meta name="keywords" content="Hugo, LikeCoin, LikeButton" />
 <meta name="description" content="不知道什麼是Likecoin的人可以先去看看這篇文章 。
 這篇文章主要是參考Hugo 安裝 LikeCoin 教學 | WANcatServer 。
@@ -41,7 +41,7 @@ if (!doNotTrack) {
 	gtag('config', 'G-YNNJDS4LLV', { 'anonymize_ip': false });
 }
 </script>
-<meta property="og:title" content="在網站中加入LikeButton" />
+<meta property="og:title" content="在Hugo網站中加入LikeButton" />
 <meta property="og:description" content="不知道什麼是Likecoin的人可以先去看看這篇文章 。
 這篇文章主要是參考Hugo 安裝 LikeCoin 教學 | WANcatServer 。
 Hugo 可以使用自訂 Layout 的方式，在不改變主題的情況下改變網站設計，我們可以透過這個方式在每個文章下放置 LikeButton。
@@ -58,7 +58,7 @@ Go Template裡面有很多花括號，讓人眼花撩亂，我使用的主題在
 <meta property="article:modified_time" content="2021-08-31T16:10:27&#43;08:00" />
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="在網站中加入LikeButton"/>
+<meta name="twitter:title" content="在Hugo網站中加入LikeButton"/>
 <meta name="twitter:description" content="不知道什麼是Likecoin的人可以先去看看這篇文章 。
 這篇文章主要是參考Hugo 安裝 LikeCoin 教學 | WANcatServer 。
 Hugo 可以使用自訂 Layout 的方式，在不改變主題的情況下改變網站設計，我們可以透過這個方式在每個文章下放置 LikeButton。
@@ -85,7 +85,7 @@ Go Template裡面有很多花括號，讓人眼花撩亂，我使用的主題在
     {
       "@type": "ListItem",
       "position":  3 ,
-      "name": "在網站中加入LikeButton",
+      "name": "在Hugo網站中加入LikeButton",
       "item": "https://blo-blo-blog.github.io/posts/hugo_likebutton/"
     }
   ]
@@ -95,8 +95,8 @@ Go Template裡面有很多花括號，讓人眼花撩亂，我使用的主題在
 {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  "headline": "在網站中加入LikeButton",
-  "name": "在網站中加入LikeButton",
+  "headline": "在Hugo網站中加入LikeButton",
+  "name": "在Hugo網站中加入LikeButton",
   "description": "不知道什麼是Likecoin的人可以先去看看這篇文章 。\n這篇文章主要是參考Hugo 安裝 LikeCoin 教學 | WANcatServer 。\nHugo 可以使用自訂 Layout 的方式，在不改變主題的情況下改變網站設計，我們可以透過這個方式在每個文章下放置 LikeButton。\n為了覆寫文章輸出的模板，將 theme 的 layouts 資料夾複製到專案目錄下。\ncp -r theme/\u0026lt;YOUR_THEME\u0026gt;/layouts/ . Hugo 中的 Partial 功能，可以讓你建立小模板，嵌入在頁面中。參考文件 。\n在 layouts 的 partials 資料夾建立 likecoin.html，寫入以下內容。你也可以在這裡加上想給讀者看的說明文字（HTML格式）。\n\u0026lt;iframe class=\u0026quot;LikeCoin\u0026quot; height=\u0026quot;235\u0026quot; src=\u0026quot;https://button.like.co/in/embed/{{ .Site.Params.likerID }}/button?referrer={{ .Permalink }}\u0026quot; width=\u0026quot;100%\u0026quot; frameborder=0\u0026gt;\u0026lt;/iframe\u0026gt; 接下來在 config.yml 的params後面加入\nlikerID = \u0026quot;\u0026lt;your liker id\u0026gt;\u0026quot; 接著編輯文章使用的模板，通常是 _default/single.html。這就是一個 Go Template，在你想要的地方插入：\n{{ partial \u0026quot;likecoin.html\u0026quot; . }} 建議插在 {{ .Content }} 後面，Like Button 就會接在文章後面。\nGo Template裡面有很多花括號，讓人眼花撩亂，我使用的主題在 {{ .",
   "keywords": [
     "Hugo", "LikeCoin", "LikeButton"
@@ -200,7 +200,7 @@ Go Template裡面有很多花括號，讓人眼花撩亂，我使用的主題在
   <header class="post-header">
     <div class="breadcrumbs"><a href="https://blo-blo-blog.github.io">Home</a>&nbsp;»&nbsp;<a href="https://blo-blo-blog.github.io/posts/">Posts</a></div>
     <h1 class="post-title">
-      在網站中加入LikeButton
+      在Hugo網站中加入LikeButton
     </h1>
     <div class="post-meta">August 31, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;blo.blo.blog
 </div>
@@ -256,7 +256,7 @@ Go Template裡面有很多花括號，讓人眼花撩亂，我使用的主題在
   <a class="prev" href="https://blo-blo-blog.github.io/posts/hugo_ga/">
     <span class="title">« </span>
     <br>
-    <span>在網站中加入Google Analytics</span>
+    <span>在Hugo網站中加入Google Analytics</span>
   </a>
   <a class="next" href="https://blo-blo-blog.github.io/posts/hugo_on_github_page/">
     <span class="title"> »</span>
