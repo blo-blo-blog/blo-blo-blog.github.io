@@ -2,6 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://blo-blo-blog.github.io/tags/apple-touch-icon/</loc>
+    <lastmod>2021-09-05T11:33:30+08:00</lastmod>
+  </url><url>
+    <loc>https://blo-blo-blog.github.io/</loc>
+    <lastmod>2021-09-05T11:33:30+08:00</lastmod>
+  </url><url>
+    <loc>https://blo-blo-blog.github.io/tags/favicon/</loc>
+    <lastmod>2021-09-05T11:33:30+08:00</lastmod>
+  </url><url>
+    <loc>https://blo-blo-blog.github.io/tags/hugo/</loc>
+    <lastmod>2021-09-05T11:33:30+08:00</lastmod>
+  </url><url>
+    <loc>https://blo-blo-blog.github.io/posts/</loc>
+    <lastmod>2021-09-05T11:33:30+08:00</lastmod>
+  </url><url>
+    <loc>https://blo-blo-blog.github.io/posts/hugo_favicon/</loc>
+    <lastmod>2021-09-05T11:33:30+08:00</lastmod>
+  </url><url>
+    <loc>https://blo-blo-blog.github.io/tags/</loc>
+    <lastmod>2021-09-05T11:33:30+08:00</lastmod>
+  </url><url>
     <loc>https://blo-blo-blog.github.io/posts/bashcrawl/</loc>
     <lastmod>2021-09-04T09:16:15+08:00</lastmod>
   </url><url>
@@ -11,23 +32,11 @@
     <loc>https://blo-blo-blog.github.io/tags/bashcrawl/</loc>
     <lastmod>2021-09-04T09:16:15+08:00</lastmod>
   </url><url>
-    <loc>https://blo-blo-blog.github.io/</loc>
-    <lastmod>2021-09-04T09:16:15+08:00</lastmod>
-  </url><url>
-    <loc>https://blo-blo-blog.github.io/posts/</loc>
-    <lastmod>2021-09-04T09:16:15+08:00</lastmod>
-  </url><url>
     <loc>https://blo-blo-blog.github.io/categories/</loc>
-    <lastmod>2021-09-04T09:16:15+08:00</lastmod>
-  </url><url>
-    <loc>https://blo-blo-blog.github.io/tags/</loc>
     <lastmod>2021-09-04T09:16:15+08:00</lastmod>
   </url><url>
     <loc>https://blo-blo-blog.github.io/categories/%E9%81%8A%E6%88%B2/</loc>
     <lastmod>2021-09-04T09:16:15+08:00</lastmod>
-  </url><url>
-    <loc>https://blo-blo-blog.github.io/tags/hugo/</loc>
-    <lastmod>2021-09-02T17:16:37+08:00</lastmod>
   </url><url>
     <loc>https://blo-blo-blog.github.io/tags/newsboat/</loc>
     <lastmod>2021-09-02T17:16:37+08:00</lastmod>

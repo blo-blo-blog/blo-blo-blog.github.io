@@ -6,7 +6,21 @@
     <description>Recent content in Posts on blo.blo.blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>utf-8</language>
-    <lastBuildDate>Sat, 04 Sep 2021 09:16:15 +0800</lastBuildDate><atom:link href="https://blo-blo-blog.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 05 Sep 2021 11:33:30 +0800</lastBuildDate><atom:link href="https://blo-blo-blog.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>在Hugo網站中加入Favicon</title>
+      <link>https://blo-blo-blog.github.io/posts/hugo_favicon/</link>
+      <pubDate>Sun, 05 Sep 2021 11:33:30 +0800</pubDate>
+      
+      <guid>https://blo-blo-blog.github.io/posts/hugo_favicon/</guid>
+      <description>Favicon是什麼？ 維基百科 是這麼說的：「Favicon是favorites icon的縮寫，亦被稱為website icon（網站圖示）、page icon（頁面圖示）或urlicon（URL圖示）。Favicon是與某個網站或網頁相關聯的圖示。」
+Favicon可以讓網站更容易被記得，或是在Android或iOS的手機中藉由「加入主畫面」的功能產生一個web app。
+Hugo後端的設定 只要在config.yml中加入：
+params: assets: favicon: &amp;quot;&amp;lt;link / abs url&amp;gt;&amp;quot; favicon16x16: &amp;quot;&amp;lt;link / abs url&amp;gt;&amp;quot; favicon32x32: &amp;quot;&amp;lt;link / abs url&amp;gt;&amp;quot; apple_touch_icon: &amp;quot;&amp;lt;link / abs url&amp;gt;&amp;quot; safari_pinned_tab: &amp;quot;&amp;lt;link / abs url&amp;gt;&amp;quot; &amp;lt;link / abs url &amp;gt;是你的favicon來源，筆者是使用ICONS8 提供的免費favicon，在這裡直接填入我選擇的favicon的連結。也可以將favicon的檔案儲存在./static裡面，但是可能載入的速度會比較慢。
+可以藉由修改./layouts/partials/head.html更深入的設定favicon的輸出。
+參考文件 Where do I put my favicon with Hugo | stackoverflow Adding Custom Favicon(s) | PaperMod </description>
+    </item>
+    
     <item>
       <title>[遊戲] Bashcrawl介紹</title>
       <link>https://blo-blo-blog.github.io/posts/bashcrawl/</link>
@@ -14,14 +28,14 @@
       
       <guid>https://blo-blo-blog.github.io/posts/bashcrawl/</guid>
       <description>簡介 這是一個純文字的地牢遊戲，他的呈現方式非常有趣，是用目錄和文件來代表房間和提示，遊玩的方式是用Bash的指令，很適合Bash的初學者玩，在遊戲的過程中，還可以學習到不同的指令使用方式。
-安裝 在開始之前，我們的電腦之中必須有Bash或Zsh。Linux, BSD和MacOS這些作業系統預設都包含Bash。Windows的使用者可以先安裝Cygwin或WSL，也可以嘗試使用Linux。
-到官網或是點擊這裡下載並且解壓縮。
+安裝 在開始之前，我們的電腦之中必須有Bash或Zsh 。Linux, BSD和MacOS這些作業系統預設都包含Bash。Windows的使用者可以先安裝Cygwin 或WSL ，也可以嘗試使用Linux。
+到官網 或是點擊這裡 下載並且解壓縮。
 開始遊戲 首先，用終端機開啟bashcrawl的目錄，輸入指令ls，會出現當前目錄下的檔案：
 blobloblog@mylaptop:~/Downloads/bashcrawl-master$ ls entrance LICENSE README.md 有一檔案寫著README.md，使用指令cat將他所有的內容輸出在終端機中：
 cat README.md 或是使用less，可以用方向鍵瀏覽文件內容，按下q離開：
 less README.md 仔細閱讀README.md，然後使用以下指令開始遊戲：
 cd entrance/ 祝大家玩的愉快 ଘ(੭ˊᵕˋ)੭* ੈ✩
-參考文件 https://marlborough-college.gitbook.io/attic-lab/the-terminal/games/level-1-bashcrawl</description>
+參考文件 https://marlborough-college.gitbook.io/attic-lab/the-terminal/games/level-1-bashcrawl </description>
     </item>
     
     <item>
@@ -30,10 +44,10 @@ cd entrance/ 祝大家玩的愉快 ଘ(੭ˊᵕˋ)੭* ੈ✩
       <pubDate>Thu, 02 Sep 2021 17:16:37 +0800</pubDate>
       
       <guid>https://blo-blo-blog.github.io/posts/rss_newsboat_hugo/</guid>
-      <description>什麼是RSS? 下面這個好和弦的影片裡有詳細的介紹。
+      <description>什麼是RSS? 下面這個好和弦 的影片裡有詳細的介紹。
   4:24 開始介紹Newsboat
 安裝Newsboat 如果有安裝snap，可以直接使用
-sudo snap install newsboat 進入程式之後可以按快捷鍵?，查看快捷鍵提示，也可以看#我的Newsboat設定自訂快捷鍵。
+sudo snap install newsboat 進入程式之後可以按快捷鍵?，查看快捷鍵提示，也可以看#我的Newsboat設定 自訂快捷鍵。
 Distrotube深入解析Newsboat RSS Reader 因為筆者特別喜歡Newsboat的簡潔版面和方便的鍵盤操作，所以另外又找到這個影片，對Newsboat有更進一步的了解。
   var tag = document.createElement(&#39;script&#39;); tag.src = &#34;https://www.youtube.com/player_api&#34;; var firstScriptTag = document.getElementsByTagName(&#39;script&#39;)[0]; firstScriptTag.parentNode.insertBefore(tag, firstScriptTag); var player; function onYouTubePlayerAPIReady() { ytplayer = new YT.Player(&#39;ytplayer&#39;, { videoId: &#34;CJXdQTGm1jg&#34;, }); console.log(ytplayer); } function playerSeekTo(player, seconds) { player.seekTo(seconds); }  1:46
 如何編輯 urls
@@ -48,7 +62,7 @@ youtube channel rss feed</description>
       <pubDate>Thu, 02 Sep 2021 16:26:01 +0800</pubDate>
       
       <guid>https://blo-blo-blog.github.io/posts/hugo_ga/</guid>
-      <description>首先可以參考Google Analytics GA是什麼？。
+      <description>首先可以參考Google Analytics GA是什麼？ 。
 取得「評估ID」之後，在 config.yml 中加上：
 googleAnalytics: &amp;lt;YOUR_TRACKING_ID&amp;gt; 並且在 params 下面加上：
 env: production 接著去點點看你的網站，如果成功的話可以在GA的頁面，看到活動紀錄。</description>
@@ -60,16 +74,16 @@ env: production 接著去點點看你的網站，如果成功的話可以在GA�
       <pubDate>Tue, 31 Aug 2021 16:10:27 +0800</pubDate>
       
       <guid>https://blo-blo-blog.github.io/posts/hugo_likebutton/</guid>
-      <description>不知道什麼是Likecoin的人可以先去看看這篇文章。
-這篇文章主要是參考Hugo 安裝 LikeCoin 教學 | WANcatServer。
+      <description>不知道什麼是Likecoin的人可以先去看看這篇文章 。
+這篇文章主要是參考Hugo 安裝 LikeCoin 教學 | WANcatServer 。
 Hugo 可以使用自訂 Layout 的方式，在不改變主題的情況下改變網站設計，我們可以透過這個方式在每個文章下放置 LikeButton。
 為了覆寫文章輸出的模板，將 theme 的 layouts 資料夾複製到專案目錄下。
-cp -r theme/&amp;lt;YOUR_THEME&amp;gt;/layouts/ . Hugo 中的 Partial 功能，可以讓你建立小模板，嵌入在頁面中。參考文件。
+cp -r theme/&amp;lt;YOUR_THEME&amp;gt;/layouts/ . Hugo 中的 Partial 功能，可以讓你建立小模板，嵌入在頁面中。參考文件 。
 在 layouts 的 partials 資料夾建立 likecoin.html，寫入以下內容。你也可以在這裡加上想給讀者看的說明文字（HTML格式）。
 &amp;lt;iframe class=&amp;quot;LikeCoin&amp;quot; height=&amp;quot;235&amp;quot; src=&amp;quot;https://button.like.co/in/embed/{{ .Site.Params.likerID }}/button?referrer={{ .Permalink }}&amp;quot; width=&amp;quot;100%&amp;quot; frameborder=0&amp;gt;&amp;lt;/iframe&amp;gt; 接下來在 config.yml 的params後面加入
 likerID = &amp;quot;&amp;lt;your liker id&amp;gt;&amp;quot; 接著編輯文章使用的模板，通常是 _default/single.html。這就是一個 Go Template，在你想要的地方插入：
 {{ partial &amp;quot;likecoin.html&amp;quot; . }} 建議插在 {{ .Content }} 後面，Like Button 就會接在文章後面。
-Go Template裡面有很多花括號，讓人眼花撩亂，我使用的主題在 {{ .Content }} 附近的程式碼如下：</description>
+Go Template裡面有很多花括號，讓人眼花撩亂，我使用的主題在 {{ .</description>
     </item>
     
     <item>
@@ -84,7 +98,7 @@ Go Template裡面有很多花括號，讓人眼花撩亂，我使用的主題在
 如果是要作為主要的個人網站，Repository name建議可以使用&amp;lt;USERNAME&amp;gt;.github.io。如果你的github repo是命名成&amp;lt;USERNAME&amp;gt;.github.io的話，你的網頁就會發布在&amp;lt;USERNAME&amp;gt;.github.io；如果不是，會在&amp;lt;USERNAME&amp;gt;.github.io/&amp;lt;your_repo&amp;gt;
 勾選Public，只有付費版本可以用Private的repository來建立Github Page。其餘的選項可以自行決定。
 最後按下Create repository。
-上傳到Github repository 如果沒有使用過git，可以先參考Git 教學(1) : Git 的基本使用，完成你的git設定。
+上傳到Github repository 如果沒有使用過git，可以先參考Git 教學(1) : Git 的基本使用 ，完成你的git設定。
 這裡以hugo專案預設的存檔路徑./public為例。
 移動到public底下，開始用git管理這個資料夾：
 git init 將所有檔案加入管理：
@@ -98,7 +112,7 @@ commit之後就可以push到你的Github了。
 會出現綠色提示框：
 如果其他部份都設定成功，點擊提示框中的超連結，就可以看到跟hugo server產生一樣的網頁了（可能要等伺服器更新）。
 之後 如果有更動，回到專案目錄用hugo產生好網頁，接著到GitHub Desktop一樣是用commit和push就可以了。
-參考文件： Build a Personal Website With Github Pages and Hugo</description>
+參考文件： Build a Personal Website With Github Pages and Hugo git &amp;amp;ndash;local-branching-on-the-cheap Adding an existing project to GitHub using the command line </description>
     </item>
     
     <item>
@@ -113,12 +127,10 @@ snap install hugo --channel=extended 其他作業系統可以到 Install Hugo | 
 hugo version  若要解除安裝：
 snap remove hugo 
 開始網頁專案 確定安裝好Hugo之後，選好要存放網頁專案的目錄，用指令
- hugo new site mywebsite -f yml  mywebsite可以替換成其他你想要的名字。 -f yml指定使用yml格式，因為yml/yaml的格式比起toml更容易閱讀，根據Papermod的作者adityatelange的說法，所以以下也將採用yml的格式。如果有需要，你可以很容易的找到YML to TOML的轉換器。   可以看到hugo幫你建立好的檔案架構如下。
-mywebsite/ ├── archetypes │ └── default.md ├── config.yml ├── content ├── data ├── layouts ├── static └── themes 選擇主題 我選擇的主題是PaperMod，因為這個主題裡面有很不錯的指引，也有舒服的版面設計。
+ hugo new site mywebsite -f yml  mywebsite可以替換成其他你想要的名字。 -f yml指定使用yml格式，因為yml/yaml的格式比起toml更容易閱讀，根據Papermod的作者adityatelange 的說法 ，所以以下也將採用yml的格式。如果有需要，你可以很容易的找到YML to TOML 的轉換器。   可以看到hugo幫你建立好的檔案架構如下。
+mywebsite/ ├── archetypes │ └── default.md ├── config.yml ├── content ├── data ├── layouts ├── static └── themes 選擇主題 我選擇的主題是PaperMod ，因為這個主題裡面有很不錯的指引，也有舒服的版面設計。
 移動到mywebsite底下執行以下指令，把PaperMod的資料複製到mywebsite/themes/PaperMod。
-git clone https://github.com/adityatelange/hugo-PaperMod themes/PaperMod --depth=1 接著打開mywebsite/config.yml在最後加入
-theme: &amp;quot;PaperMod&amp;quot; 
-新增文章 hugo new posts/my-first-post.</description>
+git clone https://github.com/adityatelange/hugo-PaperMod themes/PaperMod --depth=1 接著打開mywebsite/config.yml在最後加入</description>
     </item>
     
   </channel>
