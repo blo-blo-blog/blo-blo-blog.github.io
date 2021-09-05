@@ -132,15 +132,29 @@ if (!doNotTrack) {
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2>Hugo網站的向外連結</h2>
+  </header>
+  <section class="entry-content">
+    <p>前言 網站中少不了的就是超連結(Hyperlink)，網站中的連結也會影響搜尋引擎優化(Search Engine Optimization)，但是這隱含了網站被跨網站腳本攻擊(XSS)的可能性。
+Hugo link模板 Hugo渲染link的模板在：
+./layouts/_default/markup/render-link.html 如果沒有，自己新增一個就可以了。在裡面加上：
+&lt;a href=&#34;{{ .Destination | safeURL }}&#34; {{ with .Title}} title=&#34;{{ . }}&#34; {{ end }} {{ if strings.HasPrefix .Destination &#34;http&#34; }} target=&#34;_blank&#34; {{- /* 在新分頁中開啟連結 */ -}} rel=&#34;noopener&#34; {{- /* 避免XSS攻擊 */ -}} {{ end }}&gt; {{ .Text }} &lt;/a&gt; 參考資料 How to Open Link in New Tab | Hugo  A小編  </p>
+  </section>
+  <footer class="entry-footer">September 5, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;blo.blo.blog</footer>
+  <a class="entry-link" aria-label="post link to Hugo網站的向外連結" href="https://blo-blo-blog.github.io/posts/hugo_link/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2>在Hugo網站中加入Favicon</h2>
   </header>
   <section class="entry-content">
-    <p>Favicon是什麼？ 維基百科 是這麼說的：「Favicon是favorites icon的縮寫，亦被稱為website icon（網站圖示）、page icon（頁面圖示）或urlicon（URL圖示）。Favicon是與某個網站或網頁相關聯的圖示。」
+    <p>Favicon是什麼？ 維基百科  是這麼說的：「Favicon是favorites icon的縮寫，亦被稱為website icon（網站圖示）、page icon（頁面圖示）或urlicon（URL圖示）。Favicon是與某個網站或網頁相關聯的圖示。」
 Favicon可以讓網站更容易被記得，或是在Android或iOS的手機中藉由「加入主畫面」的功能產生一個web app。
 Hugo後端的設定 只要在config.yml中加入：
-params: assets: favicon: &#34;&lt;link / abs url&gt;&#34; favicon16x16: &#34;&lt;link / abs url&gt;&#34; favicon32x32: &#34;&lt;link / abs url&gt;&#34; apple_touch_icon: &#34;&lt;link / abs url&gt;&#34; safari_pinned_tab: &#34;&lt;link / abs url&gt;&#34; &lt;link / abs url &gt;是你的favicon來源，筆者是使用ICONS8 提供的免費favicon，在這裡直接填入我選擇的favicon的連結。也可以將favicon的檔案儲存在./static裡面，但是可能載入的速度會比較慢。
+params: assets: favicon: &#34;&lt;link / abs url&gt;&#34; favicon16x16: &#34;&lt;link / abs url&gt;&#34; favicon32x32: &#34;&lt;link / abs url&gt;&#34; apple_touch_icon: &#34;&lt;link / abs url&gt;&#34; safari_pinned_tab: &#34;&lt;link / abs url&gt;&#34; &lt;link / abs url &gt;是你的favicon來源，筆者是使用ICONS8  提供的免費favicon，在這裡直接填入我選擇的favicon的連結。也可以將favicon的檔案儲存在./static裡面，但是可能載入的速度會比較慢。
 可以藉由修改./layouts/partials/head.html更深入的設定favicon的輸出。
-參考文件 Where do I put my favicon with Hugo | stackoverflow Adding Custom Favicon(s) | PaperMod </p>
+參考文件 Where do I put my favicon with Hugo | stackoverflow  Adding Custom Favicon(s) | PaperMod  A小編  </p>
   </section>
   <footer class="entry-footer">September 5, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;blo.blo.blog</footer>
   <a class="entry-link" aria-label="post link to 在Hugo網站中加入Favicon" href="https://blo-blo-blog.github.io/posts/hugo_favicon/"></a>
@@ -152,14 +166,14 @@ params: assets: favicon: &#34;&lt;link / abs url&gt;&#34; favicon16x16: &#34;&lt
   </header>
   <section class="entry-content">
     <p>簡介 這是一個純文字的地牢遊戲，他的呈現方式非常有趣，是用目錄和文件來代表房間和提示，遊玩的方式是用Bash的指令，很適合Bash的初學者玩，在遊戲的過程中，還可以學習到不同的指令使用方式。
-安裝 在開始之前，我們的電腦之中必須有Bash或Zsh 。Linux, BSD和MacOS這些作業系統預設都包含Bash。Windows的使用者可以先安裝Cygwin 或WSL ，也可以嘗試使用Linux。
-到官網 或是點擊這裡 下載並且解壓縮。
+安裝 在開始之前，我們的電腦之中必須有Bash或Zsh  。Linux, BSD和MacOS這些作業系統預設都包含Bash。Windows的使用者可以先安裝Cygwin  或WSL  ，也可以嘗試使用Linux。
+到官網  或是點擊這裡  下載並且解壓縮。
 開始遊戲 首先，用終端機開啟bashcrawl的目錄，輸入指令ls，會出現當前目錄下的檔案：
 blobloblog@mylaptop:~/Downloads/bashcrawl-master$ ls entrance LICENSE README.md 有一檔案寫著README.md，使用指令cat將他所有的內容輸出在終端機中：
 cat README.md 或是使用less，可以用方向鍵瀏覽文件內容，按下q離開：
 less README.md 仔細閱讀README.md，然後使用以下指令開始遊戲：
 cd entrance/ 祝大家玩的愉快 ଘ(੭ˊᵕˋ)੭* ੈ✩
-參考文件 https://marlborough-college.gitbook.io/attic-lab/the-terminal/games/level-1-bashcrawl </p>
+參考文件 https://marlborough-college.gitbook.io/attic-lab/the-terminal/games/level-1-bashcrawl  </p>
   </section>
   <footer class="entry-footer">September 4, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;blo.blo.blog</footer>
   <a class="entry-link" aria-label="post link to [遊戲] Bashcrawl介紹" href="https://blo-blo-blog.github.io/posts/bashcrawl/"></a>
@@ -170,16 +184,15 @@ cd entrance/ 祝大家玩的愉快 ଘ(੭ˊᵕˋ)੭* ੈ✩
     <h2>RSS簡介與Newsboat的使用</h2>
   </header>
   <section class="entry-content">
-    <p>什麼是RSS? 下面這個好和弦 的影片裡有詳細的介紹。
+    <p>什麼是RSS? 下面這個好和弦  的影片裡有詳細的介紹。
   4:24 開始介紹Newsboat
 安裝Newsboat 如果有安裝snap，可以直接使用
-sudo snap install newsboat 進入程式之後可以按快捷鍵?，查看快捷鍵提示，也可以看#我的Newsboat設定 自訂快捷鍵。
+sudo snap install newsboat 進入程式之後可以按快捷鍵?，查看快捷鍵提示，也可以看#我的Newsboat設定  自訂快捷鍵。
 Distrotube深入解析Newsboat RSS Reader 因為筆者特別喜歡Newsboat的簡潔版面和方便的鍵盤操作，所以另外又找到這個影片，對Newsboat有更進一步的了解。
   var tag = document.createElement(&#39;script&#39;); tag.src = &#34;https://www.youtube.com/player_api&#34;; var firstScriptTag = document.getElementsByTagName(&#39;script&#39;)[0]; firstScriptTag.parentNode.insertBefore(tag, firstScriptTag); var player; function onYouTubePlayerAPIReady() { ytplayer = new YT.Player(&#39;ytplayer&#39;, { videoId: &#34;CJXdQTGm1jg&#34;, }); console.log(ytplayer); } function playerSeekTo(player, seconds) { player.seekTo(seconds); }  1:46
 如何編輯 urls
 4:06
- 以下都需要用空格隔開 自訂標題：在網址的後面加上 “~&lt;YOUR_CUSTOM_TITLE&gt;” 標籤：不需要雙引號，直接輸入你的標籤 註解： “!&lt;YOUR_COMMENT&gt;”  5:22
-youtube channel rss feed...</p>
+ 以下都需要用空格隔開 自訂標題：在網址的後面加上 “~&lt;YOUR_CUSTOM_TITLE&gt;” 標籤：不需要雙引號，直接輸入你的標籤 註解： “!&lt;YOUR_COMMENT&gt;”  5:22...</p>
   </section>
   <footer class="entry-footer">September 2, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;blo.blo.blog</footer>
   <a class="entry-link" aria-label="post link to RSS簡介與Newsboat的使用" href="https://blo-blo-blog.github.io/posts/rss_newsboat_hugo/"></a>
@@ -190,7 +203,7 @@ youtube channel rss feed...</p>
     <h2>在Hugo網站中加入Google Analytics</h2>
   </header>
   <section class="entry-content">
-    <p>首先可以參考Google Analytics GA是什麼？ 。
+    <p>首先可以參考Google Analytics GA是什麼？  。
 取得「評估ID」之後，在 config.yml 中加上：
 googleAnalytics: &lt;YOUR_TRACKING_ID&gt; 並且在 params 下面加上：
 env: production 接著去點點看你的網站，如果成功的話可以在GA的頁面，看到活動紀錄。</p>
@@ -198,77 +211,11 @@ env: production 接著去點點看你的網站，如果成功的話可以在GA�
   <footer class="entry-footer">September 2, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;blo.blo.blog</footer>
   <a class="entry-link" aria-label="post link to 在Hugo網站中加入Google Analytics" href="https://blo-blo-blog.github.io/posts/hugo_ga/"></a>
 </article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>在Hugo網站中加入LikeButton</h2>
-  </header>
-  <section class="entry-content">
-    <p>不知道什麼是Likecoin的人可以先去看看這篇文章 。
-這篇文章主要是參考Hugo 安裝 LikeCoin 教學 | WANcatServer 。
-Hugo 可以使用自訂 Layout 的方式，在不改變主題的情況下改變網站設計，我們可以透過這個方式在每個文章下放置 LikeButton。
-為了覆寫文章輸出的模板，將 theme 的 layouts 資料夾複製到專案目錄下。
-cp -r theme/&lt;YOUR_THEME&gt;/layouts/ . Hugo 中的 Partial 功能，可以讓你建立小模板，嵌入在頁面中。參考文件 。
-在 layouts 的 partials 資料夾建立 likecoin.html，寫入以下內容。你也可以在這裡加上想給讀者看的說明文字（HTML格式）。
-&lt;iframe class=&#34;LikeCoin&#34; height=&#34;235&#34; src=&#34;https://button.like.co/in/embed/{{ .Site.Params.likerID }}/button?referrer={{ .Permalink }}&#34; width=&#34;100%&#34; frameborder=0&gt;&lt;/iframe&gt; 接下來在 config.yml 的params後面加入
-likerID = &#34;&lt;your liker id&gt;&#34; 接著編輯文章使用的模板，通常是 _default/single.html。這就是一個 Go Template，在你想要的地方插入：
-{{ partial &#34;likecoin.html&#34; . }} 建議插在 {{ .Content }} 後面，Like Button 就會接在文章後面。
-Go Template裡面有很多花括號，讓人眼花撩亂，我使用的主題在 {{ ....</p>
-  </section>
-  <footer class="entry-footer">August 31, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;blo.blo.blog</footer>
-  <a class="entry-link" aria-label="post link to 在Hugo網站中加入LikeButton" href="https://blo-blo-blog.github.io/posts/hugo_likebutton/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>將網頁發佈到Github Page</h2>
-  </header>
-  <section class="entry-content">
-    <p>建立Github repository 登入Github的網頁，右上角會看到：
-點擊加號，再點擊New repository：
-出現建立的表單：
-如果是要作為主要的個人網站，Repository name建議可以使用&lt;USERNAME&gt;.github.io。如果你的github repo是命名成&lt;USERNAME&gt;.github.io的話，你的網頁就會發布在&lt;USERNAME&gt;.github.io；如果不是，會在&lt;USERNAME&gt;.github.io/&lt;your_repo&gt;
-勾選Public，只有付費版本可以用Private的repository來建立Github Page。其餘的選項可以自行決定。
-最後按下Create repository。
-上傳到Github repository 如果沒有使用過git，可以先參考Git 教學(1) : Git 的基本使用 ，完成你的git設定。
-這裡以hugo專案預設的存檔路徑./public為例。
-移動到public底下，開始用git管理這個資料夾：
-git init 將所有檔案加入管理：
-git add . 提交修改：
-git commit -m &#34;first commit&#34; 連上自己的github repo，並且做確認：
-git remote add origin https://github.com/&lt;USERNAME&gt;/&lt;your_repo&gt;.git git remote -v 強制把現在的branch變成main。
-git branch -M main 然後安裝並登入GitHub Desktop（因為筆者不會設定登入認證），接著 add local repository，找到public這個資料夾。
-commit之後就可以push到你的Github了。
-查看你的網頁 在完成上面的內容以後，打開你的repo的設定：
-在左邊的欄位中找到Pages：
-會出現綠色提示框：
-如果其他部份都設定成功，點擊提示框中的超連結，就可以看到跟hugo server產生一樣的網頁了（可能要等伺服器更新）。
-之後 如果有更動，回到專案目錄用hugo產生好網頁，接著到GitHub Desktop一樣是用commit和push就可以了。
-參考文件： Build a Personal Website With Github Pages and Hugo git &amp;ndash;local-branching-on-the-cheap Adding an existing project to GitHub using the command line </p>
-  </section>
-  <footer class="entry-footer">August 4, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;blo.blo.blog</footer>
-  <a class="entry-link" aria-label="post link to 將網頁發佈到Github Page" href="https://blo-blo-blog.github.io/posts/hugo_on_github_page/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>用Hugo製作網頁</h2>
-  </header>
-  <section class="entry-content">
-    <p>安裝Hugo 這篇以支援snap的Linux版本為例，下載擴充版本的Hugo。
-snap install hugo --channel=extended 其他作業系統可以到 Install Hugo | Hugo 找到相應的指示安裝。
-檢查是否安裝成功：
-hugo version  若要解除安裝：
-snap remove hugo 
-開始網頁專案 確定安裝好Hugo之後，選好要存放網頁專案的目錄，用指令
- hugo new site mywebsite -f yml  mywebsite可以替換成其他你想要的名字。 -f yml指定使用yml格式，因為yml/yaml的格式比起toml更容易閱讀，根據Papermod的作者adityatelange 的說法 ，所以以下也將採用yml的格式。如果有需要，你可以很容易的找到YML to TOML 的轉換器。   可以看到hugo幫你建立好的檔案架構如下。
-mywebsite/ ├── archetypes │ └── default.md ├── config.yml ├── content ├── data ├── layouts ├── static └── themes 選擇主題 我選擇的主題是PaperMod ，因為這個主題裡面有很不錯的指引，也有舒服的版面設計。
-移動到mywebsite底下執行以下指令，把PaperMod的資料複製到mywebsite/themes/PaperMod。
-git clone https://github.com/adityatelange/hugo-PaperMod themes/PaperMod --depth=1 接著打開mywebsite/config.yml在最後加入...</p>
-  </section>
-  <footer class="entry-footer">August 3, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;blo.blo.blog</footer>
-  <a class="entry-link" aria-label="post link to 用Hugo製作網頁" href="https://blo-blo-blog.github.io/posts/hugo_from_scratch/"></a>
-</article>
+<footer class="page-footer">
+  <nav class="pagination">
+    <a class="next" href="https://blo-blo-blog.github.io/posts/page/2/"> »</a>
+  </nav>
+</footer>
     </main>
     <footer class="footer">
     <span>&copy; 2021 <a href="https://blo-blo-blog.github.io">blo.blo.blog</a></span>

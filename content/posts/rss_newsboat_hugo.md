@@ -2,7 +2,7 @@
 title: "RSS簡介與Newsboat的使用"
 date: 2021-09-02T17:16:37+08:00
 draft: false
-categories: [""]
+categories: ["個人網站"]
 tags: ["RSS","Newsboat","Hugo"]
 weight: 0
 ---

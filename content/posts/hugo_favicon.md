@@ -38,3 +38,5 @@ params:
 
 [Adding Custom Favicon(s) | PaperMod](https://adityatelange.github.io/hugo-PaperMod/posts/papermod/papermod-faq/#adding-custom-favicons)
 
+[A小編](https://alittleeditor.com)
+
