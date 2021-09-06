@@ -5,11 +5,11 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
-<title>Posts | blo.blo.blog</title>
+<title>comments platform | blo.blo.blog</title>
 <meta name="keywords" content="" />
 <meta name="description" content="">
 <meta name="author" content="blo.blo.blog">
-<link rel="canonical" href="https://blo-blo-blog.github.io/posts/" />
+<link rel="canonical" href="https://blo-blo-blog.github.io/tags/comments-platform/" />
 <link crossorigin="anonymous" href="/assets/css/stylesheet.min.35cd0f65a15cafa92372b8313deef5960aae04b90ad722f2bbf509eb0468137e.css" integrity="sha256-Nc0PZaFcr6kjcrgxPe71lgquBLkK1yLyu/UJ6wRoE34=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://img.icons8.com/cotton/512/000000/sun--v3.png">
 <link rel="icon" type="image/png" sizes="16x16" href="https://img.icons8.com/cotton/512/000000/sun--v3.png">
@@ -19,7 +19,7 @@
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
 <meta name="generator" content="Hugo 0.88.1" />
-<link rel="alternate" type="application/rss+xml" href="https://blo-blo-blog.github.io/posts/index.xml">
+<link rel="alternate" type="application/rss+xml" href="https://blo-blo-blog.github.io/tags/comments-platform/index.xml">
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-YNNJDS4LLV"></script>
 <script>
@@ -31,30 +31,15 @@ if (!doNotTrack) {
 	gtag('config', 'G-YNNJDS4LLV', { 'anonymize_ip': false });
 }
 </script>
-<meta property="og:title" content="Posts" />
+<meta property="og:title" content="comments platform" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://blo-blo-blog.github.io/posts/" />
+<meta property="og:url" content="https://blo-blo-blog.github.io/tags/comments-platform/" />
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Posts"/>
+<meta name="twitter:title" content="comments platform"/>
 <meta name="twitter:description" content=""/>
 
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [, 
-    {
-      "@type": "ListItem",
-      "position":  2 ,
-      "name": "Posts",
-      "item": "https://blo-blo-blog.github.io/posts/"
-    }
-  ]
-}
-</script>
 </head>
 
 <body class="list dark" id="top">
@@ -126,11 +111,11 @@ if (!doNotTrack) {
     </nav>
 </header>
 <main class="main"> 
-<header class="page-header"><div class="breadcrumbs"><a href="https://blo-blo-blog.github.io">Home</a></div>
-  <h1>Posts</h1>
+<header class="page-header"><div class="breadcrumbs"><a href="https://blo-blo-blog.github.io">Home</a>&nbsp;»&nbsp;<a href="https://blo-blo-blog.github.io/tags/">標籤</a></div>
+  <h1>comments platform</h1>
 </header>
 
-<article class="post-entry"> 
+<article class="post-entry tag-entry"> 
   <header class="entry-header">
     <h2>在Hugo網站中加入留言板</h2>
   </header>
@@ -151,79 +136,6 @@ graphcommentId: {{ .Site.Params.GraphCommentId }}, 記得不要漏掉最後的�
   <footer class="entry-footer">September 6, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;blo.blo.blog</footer>
   <a class="entry-link" aria-label="post link to 在Hugo網站中加入留言板" href="https://blo-blo-blog.github.io/posts/hugo_graphcomment/"></a>
 </article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>Hugo網站的向外連結</h2>
-  </header>
-  <section class="entry-content">
-    <p>前言 網站中少不了的就是超連結(Hyperlink)，網站中的連結也會影響搜尋引擎優化(Search Engine Optimization)，但是這隱含了網站被跨網站腳本攻擊(XSS)的可能性。
-Hugo link模板 Hugo渲染link的模板在：
-./layouts/_default/markup/render-link.html 如果沒有，自己新增一個就可以了。在裡面加上：
-&lt;a href=&#34;{{ .Destination | safeURL }}&#34; {{ with .Title}} title=&#34;{{ . }}&#34; {{ end }} {{ if strings.HasPrefix .Destination &#34;http&#34; }} target=&#34;_blank&#34; {{- /* 在新分頁中開啟連結 */ -}} rel=&#34;noopener&#34; {{- /* 避免XSS攻擊 */ -}} {{ end }}&gt; {{ .Text }} &lt;/a&gt; 參考資料 How to Open Link in New Tab | Hugo  A小編  </p>
-  </section>
-  <footer class="entry-footer">September 5, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;blo.blo.blog</footer>
-  <a class="entry-link" aria-label="post link to Hugo網站的向外連結" href="https://blo-blo-blog.github.io/posts/hugo_link/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>在Hugo網站中加入Favicon</h2>
-  </header>
-  <section class="entry-content">
-    <p>Favicon是什麼？ 維基百科  是這麼說的：「Favicon是favorites icon的縮寫，亦被稱為website icon（網站圖示）、page icon（頁面圖示）或urlicon（URL圖示）。Favicon是與某個網站或網頁相關聯的圖示。」
-Favicon可以讓網站更容易被記得，或是在Android或iOS的手機中藉由「加入主畫面」的功能產生一個web app。
-Hugo後端的設定 只要在config.yml中加入：
-params: assets: favicon: &#34;&lt;link / abs url&gt;&#34; favicon16x16: &#34;&lt;link / abs url&gt;&#34; favicon32x32: &#34;&lt;link / abs url&gt;&#34; apple_touch_icon: &#34;&lt;link / abs url&gt;&#34; safari_pinned_tab: &#34;&lt;link / abs url&gt;&#34; &lt;link / abs url &gt;是你的favicon來源，筆者是使用ICONS8  提供的免費favicon，在這裡直接填入我選擇的favicon的連結。也可以將favicon的檔案儲存在./static裡面，但是可能載入的速度會比較慢。
-可以藉由修改./layouts/partials/head.html更深入的設定favicon的輸出。
-參考文件 Where do I put my favicon with Hugo | stackoverflow  Adding Custom Favicon(s) | PaperMod  A小編  </p>
-  </section>
-  <footer class="entry-footer">September 5, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;blo.blo.blog</footer>
-  <a class="entry-link" aria-label="post link to 在Hugo網站中加入Favicon" href="https://blo-blo-blog.github.io/posts/hugo_favicon/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>[遊戲] Bashcrawl介紹</h2>
-  </header>
-  <section class="entry-content">
-    <p>簡介 這是一個純文字的地牢遊戲，他的呈現方式非常有趣，是用目錄和文件來代表房間和提示，遊玩的方式是用Bash的指令，很適合Bash的初學者玩，在遊戲的過程中，還可以學習到不同的指令使用方式。
-安裝 在開始之前，我們的電腦之中必須有Bash或Zsh  。Linux, BSD和MacOS這些作業系統預設都包含Bash。Windows的使用者可以先安裝Cygwin  或WSL  ，也可以嘗試使用Linux。
-到官網  或是點擊這裡  下載並且解壓縮。
-開始遊戲 首先，用終端機開啟bashcrawl的目錄，輸入指令ls，會出現當前目錄下的檔案：
-blobloblog@mylaptop:~/Downloads/bashcrawl-master$ ls entrance LICENSE README.md 有一檔案寫著README.md，使用指令cat將他所有的內容輸出在終端機中：
-cat README.md 或是使用less，可以用方向鍵瀏覽文件內容，按下q離開：
-less README.md 仔細閱讀README.md，然後使用以下指令開始遊戲：
-cd entrance/ 祝大家玩的愉快 ଘ(੭ˊᵕˋ)੭* ੈ✩
-參考文件 https://marlborough-college.gitbook.io/attic-lab/the-terminal/games/level-1-bashcrawl  </p>
-  </section>
-  <footer class="entry-footer">September 4, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;blo.blo.blog</footer>
-  <a class="entry-link" aria-label="post link to [遊戲] Bashcrawl介紹" href="https://blo-blo-blog.github.io/posts/bashcrawl/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>RSS簡介與Newsboat的使用</h2>
-  </header>
-  <section class="entry-content">
-    <p>什麼是RSS? 下面這個好和弦  的影片裡有詳細的介紹。
-  4:24 開始介紹Newsboat
-安裝Newsboat 如果有安裝snap，可以直接使用
-sudo snap install newsboat 進入程式之後可以按快捷鍵?，查看快捷鍵提示，也可以看#我的Newsboat設定  自訂快捷鍵。
-Distrotube深入解析Newsboat RSS Reader 因為筆者特別喜歡Newsboat的簡潔版面和方便的鍵盤操作，所以另外又找到這個影片，對Newsboat有更進一步的了解。
-  var tag = document.createElement(&#39;script&#39;); tag.src = &#34;https://www.youtube.com/player_api&#34;; var firstScriptTag = document.getElementsByTagName(&#39;script&#39;)[0]; firstScriptTag.parentNode.insertBefore(tag, firstScriptTag); var player; function onYouTubePlayerAPIReady() { ytplayer = new YT.Player(&#39;ytplayer&#39;, { videoId: &#34;CJXdQTGm1jg&#34;, }); console.log(ytplayer); } function playerSeekTo(player, seconds) { player.seekTo(seconds); }  1:46
-如何編輯 urls
-4:06
- 以下都需要用空格隔開 自訂標題：在網址的後面加上 “~&lt;YOUR_CUSTOM_TITLE&gt;” 標籤：不需要雙引號，直接輸入你的標籤 註解： “!&lt;YOUR_COMMENT&gt;”  5:22...</p>
-  </section>
-  <footer class="entry-footer">September 2, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;blo.blo.blog</footer>
-  <a class="entry-link" aria-label="post link to RSS簡介與Newsboat的使用" href="https://blo-blo-blog.github.io/posts/rss_newsboat_hugo/"></a>
-</article>
-<footer class="page-footer">
-  <nav class="pagination">
-    <a class="next" href="https://blo-blo-blog.github.io/posts/page/2/"> »</a>
-  </nav>
-</footer>
     </main>
     <footer class="footer">
     <span>&copy; 2021 <a href="https://blo-blo-blog.github.io">blo.blo.blog</a></span>
