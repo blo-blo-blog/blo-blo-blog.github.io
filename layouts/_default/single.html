@@ -30,7 +30,9 @@
     {{- partial "anchored_headings.html" .Content -}}
     {{- else }}{{ .Content }}{{ end }}
     <!-- likecoin below -->
-    {{ partial "likecoin.html" . }}
+    {{- if not ( .Param "nolikebutton" ) }}
+    {{- partial "likecoin.html" . -}}
+    {{ end }}
   </div>
   <footer class="post-footer">
     {{- if .Params.tags }}

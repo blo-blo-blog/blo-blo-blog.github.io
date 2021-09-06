@@ -48,6 +48,9 @@ languages:
                 - name: "搜尋"
                   url: search
                   weight: 4
+                - name: "關於我"
+                  url: about
+                  weight: 5
 
     # en:
     #     languageName: "English"
