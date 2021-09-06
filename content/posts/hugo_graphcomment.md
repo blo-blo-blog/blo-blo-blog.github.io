@@ -79,7 +79,7 @@ graphcommentId: {{ .Site.Params.GraphCommentId }},
 
 這是我嘗試的第二個方案，原本是要用staticman + Heroku，但是好麻煩就放棄了。
 
-但是Graphcomment的載入速度有點慢啊(o´Å｀)=з
+但是Graphcomment的載入速度有點慢啊<br>(o´Å｀)=з
 
 #### 參考資料
 
