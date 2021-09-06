@@ -9,7 +9,7 @@ nolikebutton: ture
 
 文章的底部都有Likebutton，如果覺得我寫的不錯有幫助到你，可以幫我按讚，給我一點支持。(｡･ω･｡)ﾉ♥
 
-如果有什麼問題歡迎留言告訴我，或是私訊我的IG。
+如果有什麼問題歡迎留言告訴我，或是私訊我的[IG](https://www.instagram.com/blo.blo.blog/)。
 
 <br>
 <br>
