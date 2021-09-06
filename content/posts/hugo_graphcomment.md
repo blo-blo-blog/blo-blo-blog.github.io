@@ -1,7 +1,7 @@
 ---
 title: "在Hugo網站中加入留言板"
 date: 2021-09-06T11:15:28+08:00
-draft: false
+draft: true
 categories: ["個人網站"]
 tags: ["Hugo","Graphcomment","comments platform"]
 weight: 0
