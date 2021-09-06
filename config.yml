@@ -87,11 +87,12 @@ params:
     ShowBreadCrumbs: true
     ShowCodeCopyButtons: true
     ShowToc: true
-    # comments: false
+    comments: true
     # images: ["papermod-cover.png"]
     # images: "images/hugo_on_github_page/right_upper_conner.jpg"
 
     likerID: "kkkevin"
+    GraphCommentId: blobloblog
 
     # profileMode:
         # enabled: false
