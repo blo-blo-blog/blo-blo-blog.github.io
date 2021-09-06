@@ -5,13 +5,16 @@ comments: false
 nolikebutton: ture
 ---
 
-最近在研究架設網站和網站的呈現，不定時更新。
+最近在研究架設網站和網站設計，不定時更新。
 
-文章的底部都有Likebutton，如果覺得我寫的不錯有幫助到你，可以幫我按讚，給我一點支持。(｡･ω･｡)ﾉ♥
+文章的底部都有Likebutton，如果覺得我寫的不錯有幫助到你，可以按讚給我一點支持。
 
-如果有什麼問題歡迎留言告訴我，或是私訊我的[IG](https://www.instagram.com/blo.blo.blog/)。
+(｡･ω･｡)ﾉ♥
 
-<br>
+如果沒有使用過[LikeCoin](https://like.co/in/register)，可以用我的id kkkevin當做推薦碼。
+
+如果有什麼問題歡迎留言告訴我，或是私訊我的[IG](https://www.instagram.com/blo.blo.blog/)，雖然目前IG還沒有空去經營，但是我會去收訊息的。
+
 <br>
 <br>
 
