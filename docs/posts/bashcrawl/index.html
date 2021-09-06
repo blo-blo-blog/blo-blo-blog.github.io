@@ -315,38 +315,29 @@ entrance  LICENSE  README.md
 
     
     
-        <div id="graphcomment"></div>
-<script type="text/javascript">
+        <div class="commentbox"></div>
+<script src="https://unpkg.com/commentbox.io/dist/commentBox.min.js"></script>
+<script>
+    commentBox( "5694344052867072-proj", {
+        className: 'commentbox', 
+        defaultBoxId: 'commentbox', 
+        tlcParam: 'tlc', 
+        sortOrder: 'best', 
+        backgroundColor: null, 
+        textColor: '#fff', 
+        subtextColor: null, 
+        singleSignOn: null, 
 
-   
+        
 
-  var __semio__params = {
-    graphcommentId: "blobloblog", 
+        createBoxUrl(boxId, pageLocation) {
 
-    behaviour: {
-      
-      
-      telemetricThroughCmp: true
-    },
+            pageLocation.search = ''; 
+            pageLocation.hash = boxId; 
+            return pageLocation.href; 
+        }
 
-    
-
-  }
-
-   
-
-  function __semio__onload() {
-    __semio__gc_graphlogin(__semio__params)
-  }
-
-
-  (function() {
-    var gc = document.createElement('script'); gc.type = 'text/javascript'; gc.async = true;
-    gc.onload = __semio__onload; gc.defer = true; gc.src = 'https://integration.graphcomment.com/gc_graphlogin.js?' + Date.now();
-    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(gc);
-  })();
-
-
+    });
 </script>
 
     

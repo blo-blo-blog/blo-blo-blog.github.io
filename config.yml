@@ -95,7 +95,8 @@ params:
     # images: "images/hugo_on_github_page/right_upper_conner.jpg"
 
     likerID: "kkkevin"
-    GraphCommentId: blobloblog
+    GraphCommentId: "blobloblog"
+    CommentBoxId: "5694344052867072-proj"
 
     # profileMode:
         # enabled: false

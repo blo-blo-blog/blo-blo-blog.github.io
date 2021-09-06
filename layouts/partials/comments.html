@@ -3,7 +3,9 @@
 {{- /* Comments area end */ -}}
 
 {{ if ne .Params.comments false }}
-    {{ if .Site.Params.GraphCommentId }}
+    {{ if .Site.Params.CommentBoxId }}
+        {{ partial "commentbox.html" . }}
+    {{ else if .Site.Params.GraphCommentId }}
         {{ partial "graphcomment.html" . }}
     {{ end }}
 {{ end }}
