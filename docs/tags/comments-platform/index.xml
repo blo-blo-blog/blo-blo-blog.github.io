@@ -20,11 +20,11 @@
 接著進入設定，不要點小齒輪圖示，直接點剛才設定的Site name，會進入這個網站留言版後端。點選SETTING，進入Language的頁面選擇留言板的語言，因為沒有繁體中文，所以我是選英文。在Customization頁面中可以調整留言板的顏色，其他的設定也都可以自己調整看看。這個頁面記得先保留，等一下還會用到。
 將Graphcomment加入Hugo 打開config.yml，加入：
 params: GraphCommentId: &amp;lt;YOUR_UNIQUE_ID&amp;gt; comments: ture #如果哪天想關掉留言板，改成false就行了 在./layouts/partials中，加入或修改comments.html
-{{ if ne .Params.comments false }} {{ if .Site.Params.GraphCommentId }} {{ partial &amp;quot;graphcomment.html&amp;quot; . }} {{ end }} {{ end }} 接著到留言板後端的SETUP，在側邊連點選Universal code，下面有一些選項可以自行調整，然後複製那一段程式碼，回到./layouts/partials，新增graphcomment.html並且貼上那一段程式碼。
+{{ if ne .Params.comments false }} {{ if .Site.Params.GraphCommentId }} {{ partial &amp;quot;graphcomment.html&amp;quot; . }} {{ end }} {{ end }} 
+接著到留言板後端的SETUP，在側邊連點選Universal code，下面有一些選項可以自行調整，然後複製那一段程式碼，回到./layouts/partials，新增graphcomment.html並且貼上那一段程式碼。
 然後找到下面這行：
 graphcommentId: &amp;quot;&amp;lt;YOUR_UNIQUE_ID&amp;gt;&amp;quot;, 把他修改成：
-graphcommentId: {{ .Site.Params.GraphCommentId }}, 記得不要漏掉最後的逗號，因為後面還有其他程式碼需要用逗號隔開。
-如果以後要修改GraphCommentId，只需修改config.yml裡面的。</description>
+graphcommentId: {{ .Site.Params.GraphCommentId }}, 記得不要漏掉最後的逗號，因為後面還有其他程式碼需要用逗號隔開。</description>
     </item>
     
   </channel>

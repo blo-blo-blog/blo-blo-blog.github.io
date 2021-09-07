@@ -1,7 +1,7 @@
 ---
 title: "在Hugo網站中加入留言板"
 date: 2021-09-06T11:15:28+08:00
-draft: true
+draft: false
 categories: ["個人網站"]
 tags: ["Hugo","Graphcomment","comments platform"]
 weight: 0
@@ -47,6 +47,8 @@ params:
 {{ end }}
 ```
 
+<br>
+
 接著到留言板後端的SETUP，在側邊連點選Universal code，下面有一些選項可以自行調整，然後複製那一段程式碼，回到`./layouts/partials`，新增`graphcomment.html`並且貼上那一段程式碼。
 
 然後找到下面這行：
@@ -64,6 +66,26 @@ graphcommentId: {{ .Site.Params.GraphCommentId }},
 記得不要漏掉最後的逗號，因為後面還有其他程式碼需要用逗號隔開。
 
 如果以後要修改GraphCommentId，只需修改`config.yml`裡面的。
+
+<br>
+
+接下來找到：
+
+```
+behaviour: {
+      // HIGHLY RECOMMENDED
+      // uniq identifer for the comments thread on your page (ex: your page id)
+```
+
+加入下面一行程式碼：
+
+```
+uid: {{ .RelPermalink }}, 
+```
+
+這一個部份非常重要，筆者在複製程式碼時，沒有認真看裡面的註解，是在[A小編](https://alittleeditor.com/)的測試之下，發現留言會亂跑到其他篇文章。解決方法就是看清楚註解，加入uid，讓Graphcomment的後端可以分辨是哪一篇文章的留言。
+
+<br>
 
 最後，打開`./layouts/_default/single.html`（這是文章的基本版型），在自己喜歡的位置加上：
 
