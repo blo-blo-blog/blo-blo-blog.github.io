@@ -108,3 +108,5 @@ uid: {{ .RelPermalink }},
 https://graphcomment.com/
 
 [Comments | Hugo](https://gohugo.io/content-management/comments/)
+
+[How to get the URL of the current page with the rel or relref function? | Hugo](https://discourse.gohugo.io/t/how-to-get-the-url-of-the-current-page-with-the-rel-or-relref-function/29113)

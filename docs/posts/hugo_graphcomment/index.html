@@ -107,8 +107,8 @@ graphcommentId: {{ .Site.Params.GraphCommentId }}, 記得不要漏掉最後的�
   "keywords": [
     "Hugo", "Graphcomment", "comments platform"
   ],
-  "articleBody": "前言 留言板在部落格中是不可或缺的一部分，是讀者回饋作者最直接的方式。因為筆者是目前沒有太大的經濟能力，也沒有架設自己的伺服器，所以選用了有免費試用的第三方服務Graphcomment  ，每個月有1,000,000的流量，對小網站來說應該是很夠用了。如果之後要換平台，它也可以匯出所有的留言。\n申請帳號以及設定 Graphcomment可以直接用Google、Twitter或Facebook登入，也可以用電子郵件註冊。\n註冊完以後，按下Add site，會出現一個表單：\n Site name: 一個好記的名字就好，讓你自己容易管理各個網站 Unique ID: 會在之後的部份用到 Website URL: 就是你的網站URL Whitelist domains: 自己決定吧 Supported language: 好像是壞掉了，之後的設定可以再改  勾選我同意服務條款，按下送出，就完成了一個網站留言版後端的建立了。\n接著進入設定，不要點小齒輪圖示，直接點剛才設定的Site name，會進入這個網站留言版後端。點選SETTING，進入Language的頁面選擇留言板的語言，因為沒有繁體中文，所以我是選英文。在Customization頁面中可以調整留言板的顏色，其他的設定也都可以自己調整看看。這個頁面記得先保留，等一下還會用到。\n將Graphcomment加入Hugo 打開config.yml，加入：\nparams: GraphCommentId:  comments: ture #如果哪天想關掉留言板，改成false就行了 在./layouts/partials中，加入或修改comments.html\n{{ if ne .Params.comments false }} {{ if .Site.Params.GraphCommentId }} {{ partial \"graphcomment.html\" . }} {{ end }} {{ end }} \n接著到留言板後端的SETUP，在側邊連點選Universal code，下面有一些選項可以自行調整，然後複製那一段程式碼，回到./layouts/partials，新增graphcomment.html並且貼上那一段程式碼。\n然後找到下面這行：\ngraphcommentId: \"\", 把他修改成：\ngraphcommentId: {{ .Site.Params.GraphCommentId }}, 記得不要漏掉最後的逗號，因為後面還有其他程式碼需要用逗號隔開。\n如果以後要修改GraphCommentId，只需修改config.yml裡面的。\n接下來找到：\nbehaviour: { // HIGHLY RECOMMENDED // uniq identifer for the comments thread on your page (ex: your page id) 加入下面一行程式碼：\nuid: {{ .RelPermalink }}, 這一個部份非常重要，筆者在複製程式碼時，沒有認真看裡面的註解，是在A小編  的測試之下，發現留言會亂跑到其他篇文章。解決方法就是看清楚註解，加入uid，讓Graphcomment的後端可以分辨是哪一篇文章的留言。\n最後，打開./layouts/_default/single.html（這是文章的基本版型），在自己喜歡的位置加上：\n{{- if (.Param \"comments\") }} {{- partial \"comments.html\" . }} {{- end }} 如果以上的步驟都有正確操作，用hugo server [-d]就可以看到留言版囉✧◝(⁰▿⁰)◜✧\n後記 這是我嘗試的第二個方案，原本是要用staticman + Heroku，但是好麻煩就放棄了。\n但是Graphcomment的載入速度有點慢啊\n(o´Å｀)=з\n參考資料 https://graphcomment.com/  Comments | Hugo  ",
-  "wordCount" : "122",
+  "articleBody": "前言 留言板在部落格中是不可或缺的一部分，是讀者回饋作者最直接的方式。因為筆者是目前沒有太大的經濟能力，也沒有架設自己的伺服器，所以選用了有免費試用的第三方服務Graphcomment  ，每個月有1,000,000的流量，對小網站來說應該是很夠用了。如果之後要換平台，它也可以匯出所有的留言。\n申請帳號以及設定 Graphcomment可以直接用Google、Twitter或Facebook登入，也可以用電子郵件註冊。\n註冊完以後，按下Add site，會出現一個表單：\n Site name: 一個好記的名字就好，讓你自己容易管理各個網站 Unique ID: 會在之後的部份用到 Website URL: 就是你的網站URL Whitelist domains: 自己決定吧 Supported language: 好像是壞掉了，之後的設定可以再改  勾選我同意服務條款，按下送出，就完成了一個網站留言版後端的建立了。\n接著進入設定，不要點小齒輪圖示，直接點剛才設定的Site name，會進入這個網站留言版後端。點選SETTING，進入Language的頁面選擇留言板的語言，因為沒有繁體中文，所以我是選英文。在Customization頁面中可以調整留言板的顏色，其他的設定也都可以自己調整看看。這個頁面記得先保留，等一下還會用到。\n將Graphcomment加入Hugo 打開config.yml，加入：\nparams: GraphCommentId:  comments: ture #如果哪天想關掉留言板，改成false就行了 在./layouts/partials中，加入或修改comments.html\n{{ if ne .Params.comments false }} {{ if .Site.Params.GraphCommentId }} {{ partial \"graphcomment.html\" . }} {{ end }} {{ end }} \n接著到留言板後端的SETUP，在側邊連點選Universal code，下面有一些選項可以自行調整，然後複製那一段程式碼，回到./layouts/partials，新增graphcomment.html並且貼上那一段程式碼。\n然後找到下面這行：\ngraphcommentId: \"\", 把他修改成：\ngraphcommentId: {{ .Site.Params.GraphCommentId }}, 記得不要漏掉最後的逗號，因為後面還有其他程式碼需要用逗號隔開。\n如果以後要修改GraphCommentId，只需修改config.yml裡面的。\n接下來找到：\nbehaviour: { // HIGHLY RECOMMENDED // uniq identifer for the comments thread on your page (ex: your page id) 加入下面一行程式碼：\nuid: {{ .RelPermalink }}, 這一個部份非常重要，筆者在複製程式碼時，沒有認真看裡面的註解，是在A小編  的測試之下，發現留言會亂跑到其他篇文章。解決方法就是看清楚註解，加入uid，讓Graphcomment的後端可以分辨是哪一篇文章的留言。\n最後，打開./layouts/_default/single.html（這是文章的基本版型），在自己喜歡的位置加上：\n{{- if (.Param \"comments\") }} {{- partial \"comments.html\" . }} {{- end }} 如果以上的步驟都有正確操作，用hugo server [-d]就可以看到留言版囉✧◝(⁰▿⁰)◜✧\n後記 這是我嘗試的第二個方案，原本是要用staticman + Heroku，但是好麻煩就放棄了。\n但是Graphcomment的載入速度有點慢啊\n(o´Å｀)=з\n參考資料 https://graphcomment.com/  Comments | Hugo  How to get the URL of the current page with the rel or relref function? | Hugo  ",
+  "wordCount" : "139",
   "inLanguage": "zh-hant",
   "datePublished": "2021-09-06T11:15:28+08:00",
   "dateModified": "2021-09-06T11:15:28+08:00",
@@ -321,6 +321,14 @@ graphcommentId: {{ .Site.Params.GraphCommentId }}, 記得不要漏掉最後的�
 </a>
 
 </p>
+<p><a href="https://discourse.gohugo.io/t/how-to-get-the-url-of-the-current-page-with-the-rel-or-relref-function/29113"
+   
+   
+   target="_blank"rel="noopener">
+    How to get the URL of the current page with the rel or relref function? | Hugo
+</a>
+
+</p>
 
 
     
@@ -334,6 +342,11 @@ graphcommentId: {{ .Site.Params.GraphCommentId }}, 記得不要漏掉最後的�
       <li><a href="https://blo-blo-blog.github.io/tags/comments-platform/">comments platform</a></li>
     </ul>
 <nav class="paginav">
+  <a class="prev" href="https://blo-blo-blog.github.io/posts/intro_cli/">
+    <span class="title">« </span>
+    <br>
+    <span>[入門] 圖形使用者界面與命令列界面</span>
+  </a>
   <a class="next" href="https://blo-blo-blog.github.io/posts/hugo_link/">
     <span class="title"> »</span>
     <br>
