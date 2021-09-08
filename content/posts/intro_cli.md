@@ -38,6 +38,18 @@ weight: 0
 - 在自己的電腦上擁有更大的權限
 - 增加電腦使用方式的多樣性
 
+<!--
+
+### 打開命令列界面
+
+#### Windows
+
+- 在Windows的搜尋框輸入cmd
+- 按下快捷鍵 Win+X，會出現一個選單，選擇"Command Prompt"
+- 按下快捷鍵 Win+R，會出現一個對話框，鍵入 cmd，按下OK或Enter
+
+-->
+
 #### 參考資料
 
 [圖形使用者界面 ｜維基百科](https://zh.wikipedia.org/wiki/%E5%9B%BE%E5%BD%A2%E7%94%A8%E6%88%B7%E7%95%8C%E9%9D%A2)
