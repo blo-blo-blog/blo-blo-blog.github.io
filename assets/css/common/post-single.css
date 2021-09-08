@@ -278,7 +278,7 @@
 }
 
 .toc details[open] summary {
-    cursor: zoom-out;
+    cursor: pointer;
 }
 
 .toc .details {
