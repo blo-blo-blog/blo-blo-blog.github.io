@@ -1,10 +1,12 @@
 ---
 title: "[入門] 圖形使用者界面與命令列界面"
-date: 2021-09-06T16:27:30+08:00
-draft: false
+date: 2021-09-09
+estdate: 2021-09-06T16:27:30+08:00
+draft: true
 categories: ["入門"]
 tags: ["GUI","CLI"]
 weight: 0
+comments: false
 ---
 
 ### 前言
@@ -38,17 +40,59 @@ weight: 0
 - 在自己的電腦上擁有更大的權限
 - 增加電腦使用方式的多樣性
 
-<!--
-
 ### 打開命令列界面
+
+這邊介紹在Windows和Linux底下打開命令列界面的方法：
 
 #### Windows
 
-- 在Windows的搜尋框輸入cmd
-- 按下快捷鍵 Win+X，會出現一個選單，選擇"Command Prompt"
-- 按下快捷鍵 Win+R，會出現一個對話框，鍵入 cmd，按下OK或Enter
+Windows下面有兩種原生的命令列界面cmd(Command Prompt,命令提示字元)和PowerShell。後者是Windows開發來取代前者的，詳見[官網文章](https://support.microsoft.com/en-us/windows/powershell-is-replacing-command-prompt-fdb690cf-876c-d866-2124-21b6fb29a45f)。
 
--->
+要開啟這兩種界面，首先按下win鍵打開找到搜尋框：
+
+![windows_search_bar](/images/intro_cli/windows_search_bar.png)
+
+接著，鍵入cmd或PowerShell找到並且按下Enter執行：
+
+![powershell](/images/intro_cli/powershell_and_cmd.png)
+
+![powershell window](/images/intro_cli/powershell_window.png)
+
+![cmd window](/images/intro_cli/cmd_window.png)
+
+但是，這個些並不是今天要介紹的主角，筆者也沒有深入研究過。
+
+#### Linux
+
+我們來看看在Linux底下的命令列界面，它叫做終端機Terminal，跟使用windows一樣，我們在按下Super鍵（沒錯就是Win鍵）叫出搜尋框，搜尋Terminal，按下Enter，下圖以Ubuntu做示範。
+
+![terminal](/images/intro_cli/terminal.png)
+
+![terminal window](/images/intro_cli/terminal_window.png)
+
+我們可以用指令：
+
+```
+echo $SHELL
+```
+
+可以看出來使用的是哪一種Shell，Shell簡單來說就是指令的解釋器，Shell有很多種類，這裡可以看出來我們使用的是Bash。（[其他方法](https://www.cyberciti.biz/tips/how-do-i-find-out-what-shell-im-using.html)）
+
+![echo shell](/images/intro_cli/echo_shell.png)
+
+### Bash
+
+當我們學習電腦的一個新東西時，我們都希望它不會一直變來變去，不會過時，有越多人在維護越好。
+
+Bash目前是[自由軟體基金會(FSF, Free Software Foundation)](https://www.fsf.org/)的[GNU計畫](https://zh.wikipedia.org/wiki/GNU%E8%A8%88%E5%8A%83)維護的專案。[自由軟體](https://zh.wikipedia.org/wiki/%E8%87%AA%E7%94%B1%E8%BD%AF%E4%BB%B6)，根據自由軟體基金會對其的定義，是一類可以不受限制地自由使用、複製、研究、修改和分發的，尊重使用者自由的軟體。GNU計劃的目標是建立一套完全自由的作業系統，同時開發了大批其他的自由軟體，Bash是其中之一。
+
+Bash有許多優點和廣大的社群支持，筆者認為如果有心學習，在網路上可以找到許多資源。
+
+### 玩個遊戲吧
+
+學習新東西總是讓人無力，沒關係，這裡準備了一個遊戲叫做Bashcrawl，在筆者的另一篇文章有詳細的介紹：[[遊戲] Bashcrawl介紹](/posts/bashcrawl/)。
+
+---
 
 #### 參考資料
 
@@ -58,5 +102,4 @@ weight: 0
 
 [GUI | Computer Hope](https://www.computerhope.com/jargon/g/gui.htm)
 
-[Command line vs. GUI | Computer Hope](https://www.computerhope.com/issues/ch000619.htm
-)
+[Command line vs. GUI | Computer Hope](https://www.computerhope.com/issues/ch000619.htm)
