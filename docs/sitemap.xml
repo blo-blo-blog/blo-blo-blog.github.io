@@ -2,6 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://blo-blo-blog.github.io/posts/intro_cli/</loc>
+    <lastmod>2021-09-09T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://blo-blo-blog.github.io/posts/bashcrawl/</loc>
     <lastmod>2021-09-09T00:00:00+00:00</lastmod>
   </url><url>
@@ -14,7 +17,16 @@
     <loc>https://blo-blo-blog.github.io/</loc>
     <lastmod>2021-09-09T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://blo-blo-blog.github.io/tags/cli/</loc>
+    <lastmod>2021-09-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blo-blo-blog.github.io/tags/gui/</loc>
+    <lastmod>2021-09-09T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://blo-blo-blog.github.io/posts/</loc>
+    <lastmod>2021-09-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blo-blo-blog.github.io/categories/%E5%85%A5%E9%96%80/</loc>
     <lastmod>2021-09-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blo-blo-blog.github.io/categories/</loc>

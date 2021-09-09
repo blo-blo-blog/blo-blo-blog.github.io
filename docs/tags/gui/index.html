@@ -132,9 +132,21 @@ if (!doNotTrack) {
 但是，駭客或是各種資訊相關工程師他們經常會用到的東西不是長那樣，其實長這樣：
 這個東西就是命令列界面。
 使用命令列界面，其實跟使用圖形使用者界面很像，我們的最終目的都是要電腦乖乖聽話，服從我們的指令。在圖形使用者界面中，我們的指令就是點擊螢幕上的某個位置或是其他操作，電腦會做出相對的回應；在命令列界面中，我們的指令會是各種字元的組合，按下Enter之後我們也能得到相應的結果，像是上面那張圖片裡會輸出幾行文字。
-Why CLI  節省電腦資源，電腦運行的速度變快 熟習操作以後，可以減少使用滑鼠，節省時間 方便處理重複且大量的檔案 可以更精確的使用電腦 在自己的電腦上擁有更大的權限 增加電腦使用方式的多樣性  參考資料 圖形使用者界面 ｜維基百科  命令列界面 | 維基百科  GUI | Computer Hope  Command line vs. GUI | Computer Hope  </p>
+Why CLI  節省電腦資源，電腦運行的速度變快 熟習操作以後，可以減少使用滑鼠，節省時間 方便處理重複且大量的檔案 可以更精確的使用電腦 在自己的電腦上擁有更大的權限 增加電腦使用方式的多樣性  打開命令列界面 這邊介紹在Windows和Linux底下打開命令列界面的方法：
+Windows Windows下面有兩種原生的命令列界面cmd(Command Prompt,命令提示字元)和PowerShell。後者是Windows開發來取代前者的，詳見官網文章  。
+要開啟這兩種界面，首先按下win鍵打開找到搜尋框：
+接著，鍵入cmd或PowerShell找到並且按下Enter執行：
+但是，這個些並不是今天要介紹的主角，筆者也沒有深入研究過。
+Linux 我們來看看在Linux底下的命令列界面，它叫做終端機Terminal，跟使用windows一樣，我們在按下Super鍵（沒錯就是Win鍵）叫出搜尋框，搜尋Terminal，按下Enter，下圖以Ubuntu做示範。
+我們可以用指令：
+echo $SHELL 可以看出來使用的是哪一種Shell，Shell簡單來說就是指令的解釋器，Shell有很多種類，這裡可以看出來我們使用的是Bash。（其他方法  ）
+Bash 當我們學習電腦的一個新東西時，我們都希望它不會一直變來變去，不會過時，有越多人在維護越好。
+Bash目前是自由軟體基金會(FSF, Free Software Foundation)  的GNU計畫  維護的專案。自由軟體  ，根據自由軟體基金會對其的定義，是一類可以不受限制地自由使用、複製、研究、修改和分發的，尊重使用者自由的軟體。GNU計劃的目標是建立一套完全自由的作業系統，同時開發了大批其他的自由軟體，Bash是其中之一。
+Bash有許多優點和廣大的社群支持，筆者認為如果有心學習，在網路上可以找到許多資源。
+玩個遊戲吧 學習新東西總是讓人無力，沒關係，這裡準備了一個遊戲叫做Bashcrawl，在筆者的另一篇文章有詳細的介紹：[遊戲] Bashcrawl介紹  。
+ 參考資料 圖形使用者界面 ｜維基百科  命令列界面 | 維基百科  GUI | Computer Hope  Command line vs....</p>
   </section>
-  <footer class="entry-footer">September 6, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;blo.blo.blog</footer>
+  <footer class="entry-footer">September 9, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;blo.blo.blog</footer>
   <a class="entry-link" aria-label="post link to [入門] 圖形使用者界面與命令列界面" href="https://blo-blo-blog.github.io/posts/intro_cli/"></a>
 </article>
     </main>

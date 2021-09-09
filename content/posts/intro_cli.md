@@ -2,11 +2,10 @@
 title: "[入門] 圖形使用者界面與命令列界面"
 date: 2021-09-09
 estdate: 2021-09-06T16:27:30+08:00
-draft: true
+draft: false
 categories: ["入門"]
 tags: ["GUI","CLI"]
 weight: 0
-comments: false
 ---
 
 ### 前言

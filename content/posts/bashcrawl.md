@@ -6,7 +6,6 @@ draft: false
 categories: ["遊戲"]
 tags: ["Bashcrawl","Bash"]
 weight: 0
-comments: false
 ---
 
 ### 簡介
@@ -23,31 +22,31 @@ comments: false
 
 首先點擊下載[setup-x86_64.exe](https://cygwin.com/setup-x86_64.exe)，或是到[官網](https://cygwin.com/install.html)找到適合的版本。
 
-![cygwin](/images/intro_cli/cygwin.png)
+![cygwin](/images/bashcrawl/cygwin.png)
 
 下載好後，按下開啟檔案或是到下載的資料夾中雙擊那個檔案，會出現一個對話框，按下「是」。
 
-![press yes](/images/intro_cli/press_yes.png)
+![press yes](/images/bashcrawl/press_yes.png)
 
 然後是Cygwin Setup的頁面：
 
-![cygwin setup](/images/intro_cli/cygwin_setup.png)
+![cygwin setup](/images/bashcrawl/cygwin_setup.png)
 
 不斷的按下一步，直到Choose A Download Site的頁面，這裡隨便挑一個就可以。
 
-![choose download site](/images/intro_cli/choose_download_site.png)
+![choose download site](/images/bashcrawl/choose_download_site.png)
 
 接下來會出現Select Packages的頁面，左上角有一個`View`的選單，選擇`Full`。在`Search`的框框中輸入`Bash`，按下`Enter`應該就可以看到下圖。最上面的Package就是`Bash`，在`New`的那一欄選擇最新的版本，點擊`Src?`那一欄的框框把它打勾，最後再按個幾次下一步，就會開始安裝。
 
-![search bash](/images/intro_cli/search_bash.png)
+![search bash](/images/bashcrawl/search_bash.png)
 
 結束安裝之後會出現下圖，按下完成。
 
-![cygwin done](/images/intro_cli/cygwin_done.png)
+![cygwin done](/images/bashcrawl/cygwin_done.png)
 
 桌面上應該會出現一個圖示，點擊就可以在Windows中使用Bash了。
 
-![cygwin icon](/images/intro_cli/cygwin_icon.png)
+![cygwin icon](/images/bashcrawl/cygwin_icon.png)
 
 ### 安裝Bashcrawl
 
@@ -61,7 +60,7 @@ comments: false
 
 ```
 blobloblog@MyDesktop ~
-$ 
+$
 ```
 
 ＠前面是你的使用者名稱，@後面是你的電腦名稱，隔一個空格是你當前的目錄(也就是資料夾)，`~`表示是你的家目錄。`$`後面是你可以輸入指令的地方，按下Enter就可送出你的指令。
