@@ -54,6 +54,9 @@
 {{- if (not .Site.Params.disableScrollToTop) }}
 <script>
     var mybutton = document.getElementById("top-link");
+    window.onclick = function () {
+      
+    }
     window.onscroll = function () {
         if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
             mybutton.style.visibility = "visible";

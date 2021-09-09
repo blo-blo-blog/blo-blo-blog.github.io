@@ -65,3 +65,7 @@ div.highlight:hover .copy-code,
 pre:hover .copy-code {
     display: block;
 }
+
+html {
+  scroll-behavior: smooth;
+}
